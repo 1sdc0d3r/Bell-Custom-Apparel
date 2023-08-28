@@ -1,0 +1,341 @@
+img {
+  width: 2em;
+}
+
+body {
+  font-size: 1.1em;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #eaa102;
+}
+nav .logo {
+  height: 3em;
+  width: 10em;
+  margin-left: 1em;
+}
+nav div.right {
+  display: flex;
+  align-items: center;
+}
+nav div.right p {
+  margin-right: 2em;
+  font-size: 1.1em;
+}
+nav div.right .purchase {
+  background-color: #ac2700;
+  color: white;
+  padding: 0.5em 1em;
+  font-weight: 800;
+  font-size: 1.3em;
+}
+
+.frame1 {
+  border-top: 2px solid black;
+  background-color: #efeaea;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+.frame1 img {
+  height: 40em;
+  width: 20em;
+  position: absolute;
+  left: 20%;
+  top: 10%;
+  z-index: 0;
+}
+.frame1 h4 {
+  text-align: center;
+  font-size: 3em;
+  margin: 1em 0 0 25%;
+  color: #2206ad;
+  text-shadow: 1px 1px #ac2700;
+  z-index: 1;
+}
+.frame1 .dream {
+  font-size: 5em;
+  width: 35%;
+  align-self: flex-end;
+  margin-right: 1em;
+  color: #ac2700;
+  font-weight: 600;
+  text-shadow: -2px -2px grey;
+}
+.frame1 p.gradient {
+  align-self: flex-end;
+  width: 45%;
+  margin-right: 1em;
+  z-index: 1;
+  margin-top: 0;
+  background: #121fcf;
+  background: linear-gradient(to bottom right, #121fcf 0%, #cf1512 76%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.frame1 button {
+  width: 25%;
+  align-self: center;
+  margin: 1em auto;
+  padding: 1.5em 1em;
+  background-color: #2206ad;
+  color: #eaa102;
+  font-weight: 800;
+  font-size: 1.2em;
+  z-index: 1;
+}
+.frame1::after {
+  content: "";
+  position: absolute;
+  margin: -4em;
+  width: 8em;
+  height: 8em;
+  transform: rotate(45deg);
+  background-color: #ac2700;
+  bottom: 0;
+  right: 0;
+}
+
+section.choose-us p.why {
+  color: #ac2700;
+  margin-left: 0.5em;
+  font-size: 1.5em;
+  margin-bottom: 0;
+  margin-top: 2em;
+}
+section.choose-us > div:first-of-type {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  align-items: center;
+  justify-content: space-around;
+}
+section.choose-us > div:first-of-type p {
+  color: #2206ad;
+}
+section.choose-us > div:first-of-type > p:first-of-type {
+  font-size: 2em;
+  width: 30%;
+}
+section.choose-us > div:first-of-type > p:last-of-type {
+  width: 68%;
+}
+section.choose-us .choose-boxes {
+  display: flex;
+  border-top: 1px solid grey;
+  margin-top: 3em;
+  margin-bottom: 4em;
+  justify-content: space-around;
+}
+section.choose-us .choose-boxes .box {
+  margin: -3em 0 0;
+  width: 20%;
+  background-color: white;
+  position: relative;
+}
+section.choose-us .choose-boxes .box:first-child, section.choose-us .choose-boxes .box:nth-child(3) {
+  background: #eaa102;
+}
+section.choose-us .choose-boxes .box:first-child h5, section.choose-us .choose-boxes .box:nth-child(3) h5 {
+  color: #2206ad;
+}
+section.choose-us .choose-boxes .box:first-child p, section.choose-us .choose-boxes .box:nth-child(3) p {
+  color: #2206ad;
+}
+section.choose-us .choose-boxes .box:first-child::before, section.choose-us .choose-boxes .box:nth-child(3)::before {
+  content: "";
+  position: absolute;
+  width: 8em;
+  height: 8em;
+  background-color: #ac2700;
+  bottom: -1em;
+  right: -1em;
+  z-index: -1;
+}
+section.choose-us .choose-boxes .box:first-child::after, section.choose-us .choose-boxes .box:nth-child(3)::after {
+  content: "";
+  position: absolute;
+  width: 15em;
+  height: 15em;
+  transform: rotate(45deg);
+  background-color: white;
+  bottom: 0em;
+  right: 0em;
+  z-index: -1;
+}
+section.choose-us .choose-boxes .box:nth-child(2) {
+  background-color: #2206ad;
+}
+section.choose-us .choose-boxes .box:nth-child(2) h5 {
+  color: #ac2700;
+}
+section.choose-us .choose-boxes .box:nth-child(2) p {
+  color: white;
+}
+section.choose-us .choose-boxes .box:nth-child(2)::before {
+  content: "";
+  position: absolute;
+  width: 8em;
+  height: 8em;
+  background-color: #eaa102;
+  bottom: -1em;
+  right: -1em;
+  z-index: -1;
+}
+section.choose-us .choose-boxes .box:nth-child(2)::after {
+  content: "";
+  position: absolute;
+  width: 15em;
+  height: 15em;
+  transform: rotate(45deg);
+  background-color: white;
+  bottom: 0em;
+  right: 0em;
+  z-index: -1;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1em;
+}
+.box img {
+  width: 3em;
+  margin-top: 0.5em;
+}
+.box h5 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.services {
+  background-color: #2206ad;
+  padding: 0 1em 5em;
+}
+.services h3 {
+  color: #eaa102;
+  padding-top: 3em;
+}
+.services div.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.services div.boxes p,
+.services div.boxes .box {
+  width: 30%;
+  margin-right: 1em;
+}
+.services div.boxes p {
+  font-size: 2em;
+  color: white;
+}
+.services div.boxes .box {
+  background-color: #ac2700;
+  height: 13em;
+  margin-bottom: 2em;
+}
+.services div.boxes .box h5 {
+  color: #eaa102;
+}
+.services div.boxes .box p {
+  font-size: 1em;
+  margin-left: 1em;
+}
+
+.carousel {
+  height: 50em;
+  background: green;
+  /* Slideshow container */
+  /* Hide the images by default */
+  /* Next & previous buttons */
+  /* Position the "next button" to the right */
+  /* On hover, add a black background color with a little bit see-through */
+  /* Caption text */
+  /* Number text (1/3 etc) */
+  /* The dots/bullets/indicators */
+  /* Fading animation */
+}
+.carousel img {
+  height: 20em;
+}
+.carousel * {
+  box-sizing: border-box;
+}
+.carousel .slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.carousel .mySlides {
+  display: none;
+}
+.carousel .prev,
+.carousel .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+.carousel .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.carousel .prev:hover,
+.carousel .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.carousel .text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.carousel .numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.carousel .active,
+.carousel .dot:hover {
+  background-color: #717171;
+}
+.carousel .fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.faq {
+  color: #ac2700;
+  text-shadow: -2px -2px 5px black;
+  font-size: 3em;
+}/*# sourceMappingURL=style.css.map */

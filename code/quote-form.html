@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="/style/audit-cta/audit-cta.css" /> -->
+  </head>
+
+  <body>
+    <section id="quote-form">
+      <form action="/php/audit.php" method="post">
+        <label
+          >Company Name:<input type="text" name="companyName" required
+        /></label>
+        <label>Address:<input type="text" name="address" required /></label>
+        <label
+          >Contact Name:<input type="text" name="contactName" required
+        /></label>
+        <label
+          >Contact Phone Number:<input type="text" name="phone" required
+        /></label>
+        <h4>Apparel Options:</h4>
+        <select name="apparelType" id="apparelType">
+          <option value="shirt">shirt</option>
+          <option value="sweatshirt">Sweatshirt</option>
+        </select>
+
+        <label
+          >Your Business URL: <input type="text" name="business" required
+        /></label>
+
+        <input type="submit" name="submit" value="Get My FREE Website Audit!" />
+      </form>
+    </section>
+  </body>
+</html>
