@@ -5,30 +5,82 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- <link rel="stylesheet" href="/style/audit-cta/audit-cta.css" /> -->
+    <link rel="stylesheet" href="./style/quote-form.css" />
   </head>
 
   <body>
     <section id="quote-form">
+      <img class="bl-corner corner" src="images/RED-CORNER.png" />
+      <img class="br-corner corner" src="images/RED-CORNER.png" />
+      <div class="left">
+        <img src="./images/Man-blue-hat.png" alt="" />
+        <h5>Questions??</h5>
+        <p>
+          Have a question about screen printing or t-shirt printing? Feel free
+          to call us at: 801-771-1500 and ask for Colten.
+        </p>
+        <img
+          src="./images/Bell Custom Apparel Logo.png"
+          alt=""
+          class="left-logo"
+        />
+        <span>901 UT-193</span>
+        <span>Layton, UT 84040</span>
+        <span>Colten@BellPhoto.com</span>
+      </div>
       <form action="/php/audit.php" method="post">
-        <label
-          >Company Name:<input type="text" name="companyName" required
-        /></label>
-        <label>Address:<input type="text" name="address" required /></label>
-        <label
-          >Contact Name:<input type="text" name="contactName" required
-        /></label>
-        <label
-          >Contact Phone Number:<input type="text" name="phone" required
-        /></label>
+        <h1>Screen Printing Quote Form</h1>
+        <div class="contact-info">
+          <label
+            >Company Name: <input type="text" name="companyName" required
+          /></label>
+          <label>Address:<input type="text" name="address" required /></label>
+          <label
+            >Contact Name:<input type="text" name="contactName" required
+          /></label>
+          <label
+            >Contact Phone Number:<input type="text" name="phone" required
+          /></label>
+          <!-- <div class="apparel-options"></div> -->
+        </div>
         <h4>Apparel Options:</h4>
-        <select name="apparelType" id="apparelType">
+        <span>Shirt, Sweatshirt, Sweatpants, Shorts, Tote Bag, Other</span>
+        <input type="text" name="apparel-options" required />
+        <!-- <select name="apparelType" id="apparelType">
           <option value="shirt">shirt</option>
           <option value="sweatshirt">Sweatshirt</option>
-        </select>
+          <option value="other">Other</option>
+        </select> -->
+        <!-- <select name="shirtMaterial" id="shirtMaterial">
+          <option value="cotton">cotton</option>
+          <option value="ring-spun">ring-spun</option>
+          <option value="other">Other</option>
+        </select> -->
 
+        <!--! Maybe a way to do dropdown with a custom editable field --    https://stackoverflow.com/questions/5650457/html-select-form-with-option-to-enter-custom-value -->
+
+        <h4>Shirt Material</h4>
+        <span>100% Cotton, Ringspun Cotton, 50/50 Blend...todo</span>
+        <input type="text" name="shirt-material" required />
+
+        <h4>Quantity</h4>
+        <input type="text" name="quantity" />
+
+        <h4>Design Options</h4>
         <label
-          >Your Business URL: <input type="text" name="business" required
+          >Pre-Made Design: (Y/N):
+          <input type="text" name="pre-made-design" required
         /></label>
+        <label
+          >Number of locations: <input type="text" name="numLocations" required
+        /></label>
+        <label
+          >Number of colors in (each) design:
+          <input type="text" name="numColors" required
+        /></label>
+        <!-- 
+        <label>Brand: <input type="text" name="brand" required /></label>
+        <label>quantity: <input type="text" name="quantity" required /></label> -->
 
         <input type="submit" name="submit" value="Get My FREE Website Audit!" />
       </form>
