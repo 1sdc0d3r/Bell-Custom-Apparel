@@ -60,7 +60,7 @@
   background: lightblue;
   border: 2px solid darkblue;
   border-radius: 1em;
-  box-shadow: 2px 1px darkblue;
+  box-shadow: 3px 2px darkblue;
   height: 1.75em;
 }
 #quote-form form label {

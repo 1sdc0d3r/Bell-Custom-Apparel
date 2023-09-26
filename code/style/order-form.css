@@ -1,0 +1,154 @@
+.order-form {
+  color: #2206ad;
+  display: flex;
+  flex-direction: column;
+}
+.order-form h1 {
+  text-align: center;
+  color: #2206ad;
+  margin: 1em 0 1.25em;
+  font-size: 3em;
+}
+.order-form label {
+  font-weight: 600;
+}
+.order-form .contact,
+.order-form .design {
+  border-bottom: 3px solid blue;
+  margin: 0 0 2em;
+}
+.order-form .contact input[type^=text] {
+  background: lightblue;
+  border: 2px solid darkblue;
+  border-radius: 1em;
+  box-shadow: 3px 2px darkblue;
+  height: 1.75em;
+}
+.order-form .contact label {
+  margin-right: 0.5em;
+}
+.order-form .contact label input {
+  width: 35%;
+  margin: auto 0;
+  margin-bottom: 1em;
+  max-width: 80em;
+}
+.order-form .contact .line-4 input {
+  width: 17%;
+}
+.order-form .design input,
+.order-form .apparel-options input,
+.order-form .shirt-material input,
+.order-form .brand input,
+.order-form .colors input {
+  outline: 0;
+  border-width: 0 0 3px;
+  border-color: #ac2700;
+  width: 40%;
+}
+.order-form .design input:focus,
+.order-form .apparel-options input:focus,
+.order-form .shirt-material input:focus,
+.order-form .brand input:focus,
+.order-form .colors input:focus {
+  border-color: green;
+}
+.order-form .design {
+  padding-bottom: 2em;
+}
+.order-form .print-location {
+  display: flex;
+  justify-content: space-around;
+  margin: 1em 0 2em;
+}
+.order-form .print-location img {
+  width: 10em;
+}
+.order-form .print-location .front div,
+.order-form .print-location .back div,
+.order-form .print-location .sleeve div {
+  display: flex;
+  justify-content: center;
+}
+.order-form .apparel-options,
+.order-form .shirt-material,
+.order-form .brand {
+  width: 50%;
+}
+.order-form .apparel-options input,
+.order-form .shirt-material input,
+.order-form .brand input {
+  width: 100%;
+}
+.order-form .quantity table {
+  border-collapse: collapse;
+}
+.order-form .quantity table td {
+  border: 3px solid #7fbd3e;
+  text-align: center;
+  color: #ac2700;
+  font-weight: 700;
+  width: -moz-min-content;
+  width: min-content;
+}
+.order-form .quantity table td input {
+  outline: 0;
+  width: 99%;
+  border-width: 0;
+  text-align: center;
+}
+.order-form .quantity .larger-brands {
+  margin-top: 0;
+}
+.order-form button {
+  align-self: center;
+  width: 8em;
+  margin-top: 3em;
+  padding: 0.25em 1.25em;
+  background-color: #cfe6fc;
+  color: #2206ad;
+  font-size: 2em;
+  font-weight: 500;
+  border-radius: 0.5em;
+  box-shadow: 3px 3px #2206ad;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5em;
+}
+footer img {
+  width: 15em;
+}
+footer p {
+  margin: 0;
+}
+footer .address,
+footer .phone {
+  color: #2206ad;
+}
+footer .address,
+footer .email {
+  font-weight: 800;
+}
+footer .email {
+  color: #ac2700;
+}
+
+.corner {
+  position: absolute;
+  height: 10em;
+  width: 10em;
+  z-index: -1;
+}
+
+.bl-corner {
+  left: -1em;
+  transform: rotate(90deg);
+}
+
+.br-corner {
+  right: -1em;
+}/*# sourceMappingURL=order-form.css.map */

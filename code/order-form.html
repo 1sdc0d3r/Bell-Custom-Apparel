@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order Form</title>
+    <link rel="stylesheet" href="./style/order-form.css" />
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body>
+    <div class="order-form">
+      <h1>Order Form</h1>
+      <div class="contact">
+        <div class="line-1">
+          <label for="client"
+            >Client:
+            <input type="text" name="client" />
+          </label>
+          <label for="Telephone"
+            >Telephone:
+            <input type="text" name="Telephone" />
+          </label>
+        </div>
+        <div class="line-2">
+          <label for="Contact"
+            >Contact:
+            <input type="text" name="Contact" />
+          </label>
+          <label for="E-Mail"
+            >E-Mail:
+            <input type="text" name="E-Mail" />
+          </label>
+        </div>
+        <div class="line-3">
+          <label for="Address1"
+            >Address1:
+            <input type="text" name="Address1" />
+          </label>
+          <label for="Address2"
+            >Address2:
+            <input type="text" name="Address2" />
+          </label>
+        </div>
+        <div class="line-4">
+          <label for="City"
+            >City:
+            <input type="text" name="City" />
+          </label>
+          <label for="State"
+            >State:
+            <input type="text" name="State" />
+          </label>
+          <label for="Zipcode"
+            >Zip Code:
+            <input type="text" name="Zipcode" />
+          </label>
+          <label for="Other"
+            >Other:
+            <input type="text" name="Other" />
+          </label>
+        </div>
+      </div>
+      <div class="design">
+        <div class="premade-design">
+          <label>Premade design:</label>
+          <input
+            type="radio"
+            name="premade-design"
+            value="yes"
+            id="design-radio"
+            checked
+          />
+          <label for="premade-design">yes</label>
+          <input type="radio" name="premade-design" value="no" />
+          <label for="premade-design">no</label>
+        </div>
+        <div>
+          <label for="desc"
+            >Description of Design: <input type="text" name="desc"
+          /></label>
+        </div>
+        <div>
+          <label for="locations"
+            >Number of Locations: <input type="text" name="locations"
+          /></label>
+        </div>
+        <div>
+          <label for="colors"
+            >Number of Colors in each location:
+            <input type="text" name="colors"
+          /></label>
+        </div>
+      </div>
+      <div class="print-location">
+        <div class="front">
+          <div>
+            <input type="checkbox" name="front" id="front" />
+            <label for="front">Front Print</label>
+          </div>
+          <img src="./images/t-shirt_front.png" alt="" />
+        </div>
+        <div class="back">
+          <div>
+            <input type="checkbox" name="back" id="back" />
+            <label for="back">Back Print</label>
+          </div>
+          <img src="./images/t-shirt_back.png" alt="" />
+        </div>
+        <div class="sleeve">
+          <div>
+            <input type="checkbox" name="Sleeve" id="Sleeve" />
+            <label for="Sleeve">Sleeve Print</label>
+          </div>
+          <!-- todo only show radio if checked -->
+          <div class="sleeve-radio">
+            <input type="radio" name="sleeve-radio" value="R" />
+            <label for="sleeve-radio">R</label>
+            <input type="radio" name="sleeve-radio" value="L" />
+            <label for="sleeve-radio">L</label>
+            <input type="radio" name="sleeve-radio" value="Both" />
+            <label for="sleeve-radio">Both</label>
+          </div>
+          <img src="./images/t-shirt_sleeve.png" alt="" />
+        </div>
+      </div>
+      <div class="apparel-options">
+        <h2>Apparel Options</h2>
+        <p>Shirt, Sweatshirt, Sweatpants, Shorts, Tote Bag, Other</p>
+        <input type="text" name="apparel-options" />
+      </div>
+      <div class="shirt-material">
+        <h2>Shirt Material</h2>
+        <p>100% Cotton, Ringspun Cotton...</p>
+        <input type="text" name="shirt-material" />
+      </div>
+      <div class="brand">
+        <h2>Brand ~ optional</h2>
+        <p>Bella+Canvas, Carhart.....</p>
+        <input type="text" name="brand" />
+      </div>
+      <div class="quantity">
+        <h2>Quantity</h2>
+        <table>
+          <th>
+            <tr>
+              <td></td>
+              <td>XS</td>
+              <td>S</td>
+              <td>M</td>
+              <td>L</td>
+              <td>XL</td>
+              <td>2XL</td>
+              <td>3XL</td>
+              <td>4XL</td>
+              <td>Total</td>
+              <!-- todo total automatically -->
+            </tr>
+          </th>
+          <tr>
+            <td>Quantity</td>
+            <td><input type="text" name="quantity-xs" /></td>
+            <td><input type="text" name="quantity-S" /></td>
+            <td><input type="text" name="quantity-M" /></td>
+            <td><input type="text" name="quantity-L" /></td>
+            <td><input type="text" name="quantity-XL" /></td>
+            <td><input type="text" name="quantity-2XL" /></td>
+            <td><input type="text" name="quantity-3XL" /></td>
+            <td><input type="text" name="quantity-4XL" /></td>
+            <td><input type="text" name="total" /></td>
+            <!-- <td id="total">0</td> -->
+          </tr>
+        </table>
+        <p class="larger-brands">**Some brands have sizes larger than 4XL</p>
+        <h3>Sizes</h3>
+        <h3>2XL and larger cost more in all apparel</h3>
+      </div>
+      <div class="colors">
+        <h2>Color(s)</h2>
+        <p>Available options depend on what item is ordered.</p>
+        <input type="text" name="colors" />
+      </div>
+      <button type="submit">Submit</button>
+    </div>
+    <footer>
+      <img src="./images/Bell Custom Apparel Logo.png" alt="" />
+      <p class="address">2409 Bell Ln UT, 84405</p>
+      <p class="phone">(801)690-3353</p>
+      <p class="email">Colten@bellcustomapparel.com</p>
+
+      <img class="bl-corner corner" src="images/RED-CORNER.png" />
+      <img class="br-corner corner" src="images/RED-CORNER.png" />
+    </footer>
+  </body>
+</html>

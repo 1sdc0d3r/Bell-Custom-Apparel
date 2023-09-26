@@ -1,0 +1,173 @@
+@import "./mixins.scss";
+// https://stackoverflow.com/questions/37465458/input-text-field-with-only-bottom-border
+
+.order-form {
+  color: $darkBlue;
+  display: flex;
+  flex-direction: column;
+
+  h1 {
+    text-align: center;
+    color: $darkBlue;
+    margin: 1em 0 1.25em;
+    font-size: 3em;
+  }
+  label {
+    font-weight: 600;
+  }
+  //   input[type^="radio"] {
+  //     border: 2px solid red;
+  //     background-color: red;
+  //   }
+  .contact,
+  .design {
+    border-bottom: 3px solid blue;
+    margin: 0 0 2em;
+  }
+  .contact {
+    input[type^="text"] {
+      background: lightblue;
+      border: 2px solid darkblue;
+      border-radius: 1em;
+      box-shadow: 3px 2px darkblue;
+      height: 1.75em;
+    }
+
+    label {
+      margin-right: 0.5em;
+      input {
+        width: 35%;
+        margin: auto 0;
+        margin-bottom: 1em;
+        max-width: 80em;
+      }
+    }
+    .line-4 {
+      input {
+        width: 17%;
+      }
+    }
+  }
+  // single line inputs
+  .design,
+  .apparel-options,
+  .shirt-material,
+  .brand,
+  .colors {
+    input {
+      outline: 0;
+      border-width: 0 0 3px;
+      border-color: $darkRed;
+      width: 40%;
+    }
+    input:focus {
+      border-color: green;
+      //   outline: 1px dotted #000;
+    }
+  }
+  .design {
+    padding-bottom: 2em;
+    input[type="radio"] {
+      //   transform: scale(1.5);
+      //   accent-color: red;
+      //   padding: 2em;
+      //   border: 0px;
+      //   width: 2em;
+      //   height: 2em;
+    }
+  }
+  .print-location {
+    display: flex;
+    justify-content: space-around;
+    margin: 1em 0 2em;
+    img {
+      width: 10em;
+    }
+    .front div,
+    .back div,
+    .sleeve div {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  .apparel-options,
+  .shirt-material,
+  .brand {
+    width: 50%;
+    input {
+      width: 100%;
+    }
+  }
+  .quantity {
+    table {
+      border-collapse: collapse;
+      td {
+        border: 3px solid $green;
+        text-align: center;
+        color: $darkRed;
+        font-weight: 700;
+        width: -webkit-min-content;
+        width: -moz-min-content;
+        width: min-content;
+        input {
+          outline: 0;
+          width: 99%;
+          border-width: 0;
+          text-align: center;
+        }
+      }
+    }
+    .larger-brands {
+      margin-top: 0;
+    }
+  }
+  button {
+    align-self: center;
+    width: 8em;
+    margin-top: 3em;
+    padding: 0.25em 1.25em;
+    background-color: $lightBlue;
+    color: $darkBlue;
+    font-size: 2em;
+    font-weight: 500;
+    border-radius: 0.5em;
+    box-shadow: 3px 3px $darkBlue;
+  }
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5em;
+  img {
+    width: 15em;
+  }
+  p {
+    margin: 0;
+  }
+  .address,
+  .phone {
+    color: $darkBlue;
+  }
+  .address,
+  .email {
+    font-weight: 800;
+  }
+  .email {
+    color: $darkRed;
+  }
+}
+
+.corner {
+  position: absolute;
+  height: 10em;
+  width: 10em;
+  z-index: -1;
+}
+.bl-corner {
+  left: -1em;
+  transform: rotate(90deg);
+}
+.br-corner {
+  right: -1em;
+}
