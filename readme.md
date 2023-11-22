@@ -1,0 +1,6 @@
+- on hover of 'better pricing' cards swap red and yellow corners
+- change font
+- nav needs more height
+- carousel needs new imgs
+- remove about from nav
+- 

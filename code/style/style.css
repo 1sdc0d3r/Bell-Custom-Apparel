@@ -22,7 +22,7 @@ nav div.right {
   display: flex;
   align-items: center;
 }
-nav div.right p {
+nav div.right a {
   margin-right: 2em;
   font-size: 1.1em;
 }

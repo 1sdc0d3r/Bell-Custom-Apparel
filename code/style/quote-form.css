@@ -3,7 +3,7 @@
   justify-content: space-around;
   position: relative;
   font-size: 1.2em;
-  height: 99vh;
+  height: 100vh;
   overflow: hidden;
 }
 #quote-form img {
@@ -74,6 +74,16 @@
   margin: auto 0;
   margin-bottom: 1em;
   max-width: 80em;
+}
+#quote-form form input[type=submit] {
+  width: 40%;
+  margin: 3em auto 0;
+  padding: 1em 0em;
+  box-shadow: 3px 2px #2206ad;
+  color: #2206ad;
+  font-size: 1.25em;
+  font-weight: 800;
+  background: #cfe6fc;
 }
 #quote-form .corner {
   position: absolute;

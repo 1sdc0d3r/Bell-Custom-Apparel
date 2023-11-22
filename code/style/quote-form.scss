@@ -6,7 +6,7 @@
   justify-content: space-around;
   position: relative;
   font-size: 1.2em;
-  height: 99vh;
+  height: 100vh;
   overflow: hidden;
 
   img {
@@ -79,6 +79,16 @@
         margin-bottom: 1em;
         max-width: 80em;
       }
+    }
+    input[type="submit"] {
+      width: 40%;
+      margin: 3em auto 0;
+      padding: 1em 0em;
+      box-shadow: 3px 2px $darkBlue;
+      color: $darkBlue;
+      font-size: 1.25em;
+      font-weight: 800;
+      background: $lightBlue;
     }
   }
 
