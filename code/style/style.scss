@@ -23,13 +23,16 @@ nav {
     a {
       margin-right: 2em;
       font-size: 1.1em;
+      text-decoration: none;
+      color: black;
     }
-    .purchase {
+    .order {
       background-color: $red;
       color: white;
-      padding: 0.5em 1em;
+      padding: 0.25em 1em;
       font-weight: 800;
       font-size: 1.3em;
+      text-shadow: 1px 1px 0px black;
     }
   }
 }
@@ -224,6 +227,18 @@ nav {
             right: 0em;
             z-index: -1;
           }
+          &:hover {
+            background-color: $darkBlue;
+            h5 {
+              color: $red;
+            }
+            p {
+              color: white;
+            }
+            &::before {
+              background-color: $gold;
+            }
+          }
         }
         &:nth-child(2) {
           background-color: $darkBlue;
@@ -256,6 +271,18 @@ nav {
             bottom: 0em;
             right: 0em;
             z-index: -1;
+          }
+          &:hover {
+            background-color: $gold;
+            h5 {
+              color: $darkBlue;
+            }
+            p {
+              color: $darkBlue;
+            }
+            &::before {
+              background-color: $red;
+            }
           }
         }
       }
@@ -292,6 +319,7 @@ nav {
       flex-wrap: wrap;
       justify-content: space-around;
       .we-print {
+        font-size: 1.85em;
         line-height: 1em;
         font-weight: 800;
         // text-align: center;
@@ -337,6 +365,10 @@ nav {
           color: lawngreen;
           font-size: 0.65em;
           border: none;
+        }
+        span {
+          color: $gold;
+          margin-left: -0.5em;
         }
       }
     }
@@ -471,12 +503,15 @@ nav {
       margin-left: 1em;
       margin-top: 0;
     }
-    .q,
-    .a {
-      color: $darkBlue;
-    }
-    .q span {
-      color: $red;
+    .questions {
+      padding: 0 1em 0 2em;
+      .q,
+      .a {
+        color: $darkBlue;
+      }
+      .q span {
+        color: $red;
+      }
     }
   }
   .blog-articles {

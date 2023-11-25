@@ -25,13 +25,16 @@ nav div.right {
 nav div.right a {
   margin-right: 2em;
   font-size: 1.1em;
+  text-decoration: none;
+  color: black;
 }
-nav div.right .purchase {
+nav div.right .order {
   background-color: #ac2700;
   color: white;
-  padding: 0.5em 1em;
+  padding: 0.25em 1em;
   font-weight: 800;
   font-size: 1.3em;
+  text-shadow: 1px 1px 0px black;
 }
 
 .home-page .frame1 {
@@ -188,6 +191,18 @@ nav div.right .purchase {
   right: 0em;
   z-index: -1;
 }
+.home-page section.choose-us .choose-boxes .box:first-child:hover, .home-page section.choose-us .choose-boxes .box:nth-child(3):hover {
+  background-color: #2206ad;
+}
+.home-page section.choose-us .choose-boxes .box:first-child:hover h5, .home-page section.choose-us .choose-boxes .box:nth-child(3):hover h5 {
+  color: #ac2700;
+}
+.home-page section.choose-us .choose-boxes .box:first-child:hover p, .home-page section.choose-us .choose-boxes .box:nth-child(3):hover p {
+  color: white;
+}
+.home-page section.choose-us .choose-boxes .box:first-child:hover::before, .home-page section.choose-us .choose-boxes .box:nth-child(3):hover::before {
+  background-color: #eaa102;
+}
 .home-page section.choose-us .choose-boxes .box:nth-child(2) {
   background-color: #2206ad;
 }
@@ -218,6 +233,18 @@ nav div.right .purchase {
   right: 0em;
   z-index: -1;
 }
+.home-page section.choose-us .choose-boxes .box:nth-child(2):hover {
+  background-color: #eaa102;
+}
+.home-page section.choose-us .choose-boxes .box:nth-child(2):hover h5 {
+  color: #2206ad;
+}
+.home-page section.choose-us .choose-boxes .box:nth-child(2):hover p {
+  color: #2206ad;
+}
+.home-page section.choose-us .choose-boxes .box:nth-child(2):hover::before {
+  background-color: #ac2700;
+}
 .home-page .box {
   display: flex;
   flex-direction: column;
@@ -246,6 +273,7 @@ nav div.right .purchase {
   justify-content: space-around;
 }
 .home-page .services div.boxes .we-print {
+  font-size: 1.85em;
   line-height: 1em;
   font-weight: 800;
 }
@@ -283,6 +311,10 @@ nav div.right .purchase {
   color: lawngreen;
   font-size: 0.65em;
   border: none;
+}
+.home-page .services div.boxes .box span {
+  color: #eaa102;
+  margin-left: -0.5em;
 }
 .home-page .carousel {
   height: 50em;
@@ -380,11 +412,14 @@ nav div.right .purchase {
   margin-left: 1em;
   margin-top: 0;
 }
-.home-page .faq .q,
-.home-page .faq .a {
+.home-page .faq .questions {
+  padding: 0 1em 0 2em;
+}
+.home-page .faq .questions .q,
+.home-page .faq .questions .a {
   color: #2206ad;
 }
-.home-page .faq .q span {
+.home-page .faq .questions .q span {
   color: #ac2700;
 }
 .home-page .blog-articles {
