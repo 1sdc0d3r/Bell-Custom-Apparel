@@ -249,7 +249,7 @@ nav div.right .purchase {
   line-height: 1em;
   font-weight: 800;
 }
-.home-page .services div.boxes p,
+.home-page .services div.boxes .we-print,
 .home-page .services div.boxes .box {
   width: 25%;
 }
@@ -258,17 +258,31 @@ nav div.right .purchase {
   color: white;
 }
 .home-page .services div.boxes .box {
-  background-color: #ac2700;
-  height: 13em;
+  background-color: #001588;
+  height: -moz-min-content;
+  height: min-content;
   margin-bottom: 2em;
+  padding-bottom: 1em;
+}
+.home-page .services div.boxes .box:hover {
+  background-color: #ac2700;
+  color: #001588;
 }
 .home-page .services div.boxes .box h5 {
   color: #eaa102;
   font-size: 0.85em;
 }
 .home-page .services div.boxes .box p {
-  font-size: 1em;
-  margin-left: 1em;
+  font-size: 0.65em;
+  margin-left: 0.5em;
+}
+.home-page .services div.boxes .box button {
+  height: 2em;
+  margin-left: auto;
+  background: none;
+  color: lawngreen;
+  font-size: 0.65em;
+  border: none;
 }
 .home-page .carousel {
   height: 50em;
@@ -356,6 +370,59 @@ nav div.right .purchase {
 }
 .home-page .faq {
   color: #ac2700;
-  text-shadow: -2px -2px 5px black;
+  font-size: 1.25em;
+}
+.home-page .faq h2 {
   font-size: 3em;
+  margin-bottom: 0;
+}
+.home-page .faq h4 {
+  margin-left: 1em;
+  margin-top: 0;
+}
+.home-page .faq .q,
+.home-page .faq .a {
+  color: #2206ad;
+}
+.home-page .faq .q span {
+  color: #ac2700;
+}
+.home-page .blog-articles {
+  background-color: #2206ad;
+  padding-bottom: 5em;
+}
+.home-page .blog-articles h3 {
+  color: #eaa102;
+  text-align: center;
+  padding-top: 2em;
+}
+.home-page .blog-articles .articles {
+  display: flex;
+  justify-content: space-around;
+}
+.home-page .blog-articles .articles .card {
+  background-color: white;
+  width: 30%;
+  max-width: 20em;
+}
+.home-page .blog-articles .articles .card img {
+  width: 95%;
+  border: 3px solid black;
+  margin-left: 1.5%;
+  margin-top: 2%;
+}
+.home-page .blog-articles .articles .card h4 {
+  text-align: center;
+}
+.home-page .blog-articles .articles .card p {
+  width: 90%;
+  margin: auto;
+}
+.home-page .blog-articles .articles .card button {
+  margin-top: 0.5em;
+  margin-left: 65%;
+  border: none;
+  background: none;
+  color: lawngreen;
+  font-size: 1em;
 }/*# sourceMappingURL=style.css.map */

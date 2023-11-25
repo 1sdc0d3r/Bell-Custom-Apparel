@@ -1,0 +1,21 @@
+footer {
+  background: #eaa102;
+}
+footer .footer-top {
+  display: flex;
+  justify-content: space-around;
+}
+footer .policies {
+  display: flex;
+  flex-direction: column;
+}
+footer .border {
+  border: 2px solid black;
+  width: 90%;
+  margin: 2em auto;
+}
+footer img {
+  display: block;
+  width: 15em;
+  margin-left: auto;
+}/*# sourceMappingURL=footer.css.map */

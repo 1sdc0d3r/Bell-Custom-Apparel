@@ -297,7 +297,7 @@ nav {
         // text-align: center;
         // width: 40%;
       }
-      p,
+      .we-print,
       .box {
         width: 25%;
         //   margin: auto;
@@ -310,16 +310,33 @@ nav {
         // text-align: center;
       }
       .box {
-        background-color: $red;
-        height: 13em;
+        background-color: #001588;
+        height: -webkit-min-content;
+        height: -moz-min-content;
+        height: min-content;
         margin-bottom: 2em;
+        padding-bottom: 1em;
+
+        &:hover {
+          background-color: $red;
+          color: #001588;
+        }
         h5 {
           color: $gold;
           font-size: 0.85em;
         }
         p {
-          font-size: 1em;
-          margin-left: 1em;
+          font-size: 0.65em;
+          margin-left: 0.5em;
+        }
+        button {
+          // width: 10em;
+          height: 2em;
+          margin-left: auto;
+          background: none;
+          color: lawngreen;
+          font-size: 0.65em;
+          border: none;
         }
       }
     }
@@ -444,7 +461,61 @@ nav {
   }
   .faq {
     color: $red;
-    text-shadow: -2px -2px 5px black;
-    font-size: 3em;
+    // text-shadow: -1px -1px 1px black;
+    font-size: 1.25em;
+    h2 {
+      font-size: 3em;
+      margin-bottom: 0;
+    }
+    h4 {
+      margin-left: 1em;
+      margin-top: 0;
+    }
+    .q,
+    .a {
+      color: $darkBlue;
+    }
+    .q span {
+      color: $red;
+    }
+  }
+  .blog-articles {
+    background-color: $darkBlue;
+    padding-bottom: 5em;
+    h3 {
+      color: $gold;
+      text-align: center;
+      padding-top: 2em;
+    }
+    .articles {
+      display: flex;
+      justify-content: space-around;
+      .card {
+        background-color: white;
+        width: 30%;
+        max-width: 20em;
+        img {
+          width: 95%;
+          border: 3px solid black;
+          margin-left: 1.5%;
+          margin-top: 2%;
+        }
+        h4 {
+          text-align: center;
+        }
+        p {
+          width: 90%;
+          margin: auto;
+        }
+        button {
+          margin-top: 0.5em;
+          margin-left: 65%;
+          border: none;
+          background: none;
+          color: lawngreen;
+          font-size: 1em;
+        }
+      }
+    }
   }
 }

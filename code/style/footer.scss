@@ -1,0 +1,29 @@
+@import "./mixins.scss";
+
+footer {
+  background: $gold;
+  .footer-top {
+    display: flex;
+    justify-content: space-around;
+  }
+  .address {
+  }
+  .email {
+  }
+  .phone {
+  }
+  .policies {
+    display: flex;
+    flex-direction: column;
+  }
+  .border {
+    border: 2px solid black;
+    width: 90%;
+    margin: 2em auto;
+  }
+  img {
+    display: block;
+    width: 15em;
+    margin-left: auto;
+  }
+}
