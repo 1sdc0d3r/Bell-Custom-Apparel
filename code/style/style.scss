@@ -1,4 +1,5 @@
 @import "./mixins.scss";
+@import "./breakpoints.scss";
 
 img {
   width: 2em;
@@ -33,6 +34,9 @@ nav {
       font-weight: 800;
       font-size: 1.3em;
       text-shadow: 1px 1px 0px black;
+      @include breakpoint(xxs, xs, s) {
+        padding: 0.25em 0.25em;
+      }
     }
   }
 }
@@ -56,6 +60,9 @@ nav {
       left: 10%;
       top: 10%;
       // z-index: -1;
+      @include breakpoint(xxs, xs, s) {
+        // display: none;
+      }
     }
 
     h4 {
@@ -89,6 +96,7 @@ nav {
       background: #121fcf;
       background: linear-gradient(to bottom right, #121fcf 0%, #cf1512 76%);
       -webkit-background-clip: text;
+      background-clip: text;
       -webkit-text-fill-color: transparent;
     }
 
@@ -148,6 +156,7 @@ nav {
 
   section.choose-us {
     //   background-color: pink;
+
     p.why {
       color: $red;
       margin-left: 0.5em;
@@ -155,6 +164,10 @@ nav {
       font-weight: 600;
       margin-bottom: 0;
       margin-top: 2em;
+
+      @include breakpoint(xxs, xs, s) {
+        margin-left: 1em;
+      }
     }
     .quantity {
       display: flex;
@@ -162,6 +175,10 @@ nav {
       margin: 0 auto;
       align-items: center;
       justify-content: space-around;
+      @include breakpoint(xxs, xs, s) {
+        flex-direction: column;
+      }
+
       p {
         color: $darkBlue;
       }
@@ -170,11 +187,19 @@ nav {
         font-weight: 800;
         width: 30%;
         text-transform: uppercase;
+        @include breakpoint(xxs, xs, s) {
+          width: 90%;
+          text-align: center;
+        }
       }
       > p:last-of-type {
         width: 68%;
         font-weight: 600;
         text-align: justify;
+        @include breakpoint(xxs, xs, s) {
+          width: 80%;
+          text-align: center;
+        }
       }
     }
     .choose-boxes {
@@ -184,16 +209,22 @@ nav {
       margin-bottom: 4em;
       justify-content: space-around;
       // position: relative;
+      @include breakpoint(xxs, xs, s) {
+        flex-direction: column;
+      }
+
       .box {
         margin: -3em 0 0;
         //   border: 2px solid red;
         width: 20%;
         background-color: white;
-        //   width: 30%;
-        // box-shadow: -2px -2px 10px 2px grey;
-        // border: 10px solid rgb(239, 239, 239);
         position: relative;
         // border-radius: 1em;
+        @include breakpoint(xxs, xs, s) {
+          width: 80%;
+          margin: auto;
+          margin-bottom: 5em;
+        }
         &:first-child,
         &:nth-child(3) {
           background: $gold;
@@ -323,13 +354,19 @@ nav {
         line-height: 1em;
         font-weight: 800;
         // text-align: center;
-        // width: 40%;
+        width: 40%;
       }
       .we-print,
       .box {
         width: 25%;
         //   margin: auto;
         // margin-right: 1em;
+        @include breakpoint(xxs, xs, s) {
+          width: 80%;
+        }
+        // @include breakpoint(xxs, xs) {
+        //   color: red;
+        // }
       }
       p {
         font-size: 2em;
@@ -344,6 +381,7 @@ nav {
         height: min-content;
         margin-bottom: 2em;
         padding-bottom: 1em;
+        margin-right: 0.125em;
 
         &:hover {
           background-color: $red;
@@ -512,6 +550,9 @@ nav {
       .q span {
         color: $red;
       }
+      .a {
+        padding-left: 2em;
+      }
     }
   }
   .blog-articles {
@@ -521,14 +562,22 @@ nav {
       color: $gold;
       text-align: center;
       padding-top: 2em;
+      margin-bottom: 2em;
+      font-size: 2em;
     }
     .articles {
       display: flex;
       justify-content: space-around;
+      flex-wrap: wrap;
       .card {
         background-color: white;
         width: 30%;
         max-width: 20em;
+        @include breakpoint(xxs, xs, s) {
+          width: 80%;
+          margin-bottom: 3em;
+        }
+
         img {
           width: 95%;
           border: 3px solid black;
