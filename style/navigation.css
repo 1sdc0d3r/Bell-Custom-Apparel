@@ -1,0 +1,45 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #eaa102;
+}
+nav .logo {
+  height: 3em;
+  width: 10em;
+  margin-left: 1em;
+}
+nav div.right {
+  display: flex;
+  align-items: center;
+}
+nav div.right a {
+  margin-right: 2em;
+  font-size: 1.1em;
+  text-decoration: none;
+  color: black;
+}
+nav div.right .order {
+  background-color: #ac2700;
+  color: white;
+  padding: 0.25em 1em;
+  font-weight: 800;
+  font-size: 1.3em;
+  text-shadow: 1px 1px 0px black;
+  text-align: center;
+}
+@media (max-width: 360px) {
+  nav div.right .order {
+    padding: 0.25em 0.25em;
+  }
+}
+@media (min-width: 361px) and (max-width: 480px) {
+  nav div.right .order {
+    padding: 0.25em 0.25em;
+  }
+}
+@media (min-width: 481px) and (max-width: 736px) {
+  nav div.right .order {
+    padding: 0.25em 0.25em;
+  }
+}/*# sourceMappingURL=navigation.css.map */

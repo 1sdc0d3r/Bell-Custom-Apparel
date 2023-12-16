@@ -113,27 +113,27 @@
   box-shadow: 3px 3px #2206ad;
 }
 
-footer {
+foot {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 5em;
 }
-footer img {
+foot img {
   width: 15em;
 }
-footer p {
+foot p {
   margin: 0;
 }
-footer .address,
-footer .phone {
+foot .address,
+foot .phone {
   color: #2206ad;
 }
-footer .address,
-footer .email {
+foot .address,
+foot .email {
   font-weight: 800;
 }
-footer .email {
+foot .email {
   color: #ac2700;
 }
 

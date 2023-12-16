@@ -1,0 +1,35 @@
+@import "./mixins.scss";
+@import "./breakpoints.scss";
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: $gold;
+  .logo {
+    height: 3em;
+    width: 10em;
+    margin-left: 1em;
+  }
+  div.right {
+    display: flex;
+    align-items: center;
+    a {
+      margin-right: 2em;
+      font-size: 1.1em;
+      text-decoration: none;
+      color: black;
+    }
+    .order {
+      background-color: $red;
+      color: white;
+      padding: 0.25em 1em;
+      font-weight: 800;
+      font-size: 1.3em;
+      text-shadow: 1px 1px 0px black;
+      text-align: center;
+      @include breakpoint(xxs, xs, s) {
+        padding: 0.25em 0.25em;
+      }
+    }
+  }
+}

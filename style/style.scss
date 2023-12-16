@@ -8,38 +8,7 @@ body {
   font-size: 1.1em;
   margin: 0;
 }
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: $gold;
-  .logo {
-    height: 3em;
-    width: 10em;
-    margin-left: 1em;
-  }
-  div.right {
-    display: flex;
-    align-items: center;
-    a {
-      margin-right: 2em;
-      font-size: 1.1em;
-      text-decoration: none;
-      color: black;
-    }
-    .order {
-      background-color: $red;
-      color: white;
-      padding: 0.25em 1em;
-      font-weight: 800;
-      font-size: 1.3em;
-      text-shadow: 1px 1px 0px black;
-      @include breakpoint(xxs, xs, s) {
-        padding: 0.25em 0.25em;
-      }
-    }
-  }
-}
+
 .home-page {
   .frame1 {
     border-top: 2px solid black;
@@ -62,6 +31,7 @@ nav {
       // z-index: -1;
       @include breakpoint(xxs, xs, s) {
         // display: none;
+        margin-top: 20em;
       }
     }
 
@@ -211,6 +181,7 @@ nav {
       // position: relative;
       @include breakpoint(xxs, xs, s) {
         flex-direction: column;
+        padding-top: 4em;
       }
 
       .box {
@@ -223,7 +194,7 @@ nav {
         @include breakpoint(xxs, xs, s) {
           width: 80%;
           margin: auto;
-          margin-bottom: 5em;
+          margin-bottom: 7em;
         }
         &:first-child,
         &:nth-child(3) {
