@@ -1,4 +1,4 @@
 $(function () {
-    $("footer").load("/code/footer.html")
-    $("nav").load("/code/navigation.html")
+    $("footer").load("/footer.html")
+    $("nav").load("/navigation.html")
 })

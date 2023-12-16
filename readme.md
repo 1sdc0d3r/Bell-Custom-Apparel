@@ -2,5 +2,7 @@
 - change font
 - nav needs more height
 - carousel needs new imgs
-- remove about from nav
-- 
+- about page
+- php sending forms
+
+forms make button tab-able

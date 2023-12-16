@@ -1,19 +1,16 @@
-<!--// todo handle success and errors
-
-this audit2 is for testing the quick inquiry form-->
+<!--// todo handle success and errors -->
 
 <?php
 
 if(isset($_POST['submit'])) {
-  $email_to = "solutions@BlueSmokeMedia.net"; //email address for receiving email
-  $subject = "Quick Inquiry";
+  $email_to = "fish0859@gmail.com"; //email address for receiving email
+  $subject = "Quote Form";
 
   //! Required Vars
-  $name = $_POST['name'];
-  $reply_to = $_POST['email'];
-  $phone = $_POST['contactPhone'];
-  $service = $_POST['services'];
-  $message = $_POST['message'];
+  $contactName = $_POST['contactName'];
+  // $reply_to = $_POST['email'];
+  $phone = $_POST['phone'];
+  $companyName = $_POST['companyName'];
   // $anti_spam = $_POST['antiSpam'] == "";
   //! Required Vars
 
@@ -26,11 +23,10 @@ if(isset($_POST['submit'])) {
   }
 
   // validation expected data exists
-  if(!isset($name) ||
-  !isset($reply_to) ||
+  if(!isset($contactName) ||
+  // !isset($reply_to) ||
   !isset($phone) ||
-  !isset($service) ||
-  !isset($message)
+  !isset($companyName)
   // !isset($anti_spam) || !$anti_spam
     )  {
     died('We are sorry, but there appears to be a problem with the form you submitted. Please check all required fields.');
@@ -43,22 +39,24 @@ if(isset($_POST['submit'])) {
     return str_replace($bad,"",$string);
   }
 
-  $reply_to = clean_string($reply_to);
+  // $reply_to = clean_string($reply_to);
 
-  $name = clean_string($name);
+  $contactName = clean_string($contactName);
 
-  $message = "Service: ";
-  $message .= clean_string($service)."\n";
-  $message .= "Name: ";
-  $message .= clean_string($name)."\n";
+  $message = "Website: ";
+  $message .= clean_string($companyName)."\n";
+  $message .= "contactName: ";
+  $message .= clean_string($contactName)."\n";
   $message .= "Phone: ";
   $message .= clean_string($phone)."\n";
   // todo format phone number - also turn into link for iphone
 
 
 // create email headers
-$headers = 'From: '.$reply_to."\n".
-'Reply-To: '.$reply_to;
+
+// $headers = 'From: '.$reply_to."\n".
+// 'Reply-To: '.$reply_to;
+
 //! @mail() suppresses all warnings/errors vs mail()
 mail($email_to, $subject, $message, $headers);
 // echo mail
@@ -73,7 +71,7 @@ mail($email_to, $subject, $message, $headers);
 // todo redirect anywhere?
 // window.location.href='../html/Contact.html';
     </script>
-    <h1>Inquiry Sent</h1>
+    <h1>audit sent</h1>
 </body>
 </html>
 
