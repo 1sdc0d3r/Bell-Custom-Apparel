@@ -15,12 +15,6 @@ replace first frame man img w/ fixed img
 
 services - creative design card info
 
-fix footer polices
-
-footer polices links...
-
 article 4 - imgs
 
 footer mobile design
-
-footer address

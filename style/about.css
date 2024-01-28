@@ -1,0 +1,19 @@
+h1,
+h2 {
+  text-align: center;
+  margin: 1em 9em;
+  text-shadow: 0 2px #861e00;
+}
+
+.about {
+  display: flex;
+  font-size: 1.1em;
+}
+.about img {
+  margin: 0;
+}
+.about .border {
+  border: 2px solid black;
+  margin: 0;
+  margin-right: 3.25em;
+}/*# sourceMappingURL=about.css.map */
