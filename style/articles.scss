@@ -1,0 +1,35 @@
+@import "./mixins.scss";
+@import "./breakpoints.scss";
+
+body {
+  color: $darkBlue;
+}
+.float-r {
+  float: right;
+}
+.float-l {
+  float: left;
+}
+h3 {
+  clear: both;
+}
+img {
+  display: block;
+  width: 40%;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+.author,
+.date {
+  text-align: right;
+}
+
+.hero-img {
+  //   margin-left: 25%;
+  width: 30em;
+  margin: 0 auto;
+  //   text-align: center;
+}

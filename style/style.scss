@@ -61,10 +61,12 @@ body {
       margin-right: 1em;
       z-index: 1;
       margin-top: 0;
+      // text-shadow: 1px 1px black;
+      // stroke: black;
 
       // Get Gradient from css portal
       background: #121fcf;
-      background: linear-gradient(to bottom right, #121fcf 0%, #cf1512 76%);
+      background: linear-gradient(to bottom right, $gold 0%, $darkBlue 100%);
       -webkit-background-clip: text;
       background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -74,7 +76,7 @@ body {
       width: 25%;
       align-self: center;
       margin: 1em auto;
-      padding: 1em 0.25em;
+      padding: 0.5em 0.2em;
       background-color: $darkBlue;
       font-weight: 600;
       font-size: 1.5em;
@@ -322,41 +324,31 @@ body {
       justify-content: space-around;
       .we-print {
         font-size: 1.85em;
-        line-height: 1em;
+        line-height: 1.05em;
         font-weight: 800;
-        // text-align: center;
-        width: 40%;
-      }
-      .we-print,
-      .box {
         width: 25%;
-        //   margin: auto;
-        // margin-right: 1em;
-        @include breakpoint(xxs, xs, s) {
-          width: 80%;
-        }
-        // @include breakpoint(xxs, xs) {
-        //   color: red;
-        // }
+        margin-top: 0;
+        text-transform: capitalize;
       }
       p {
         font-size: 2em;
         color: white;
-        // border: 2px solid red;
-        // text-align: center;
       }
       .box {
-        background-color: #001588;
-        height: -webkit-min-content;
-        height: -moz-min-content;
-        height: min-content;
+        position: relative;
+        background-color: $navy;
+        // height: -webkit-min-content;
+        // height: -moz-min-content;
+        // height: min-content;
+        // height: 13em;
         margin-bottom: 2em;
         padding-bottom: 1em;
         margin-right: 0.125em;
+        width: 25%;
 
         &:hover {
           background-color: $red;
-          color: #001588;
+          color: $navy;
         }
         h5 {
           color: $gold;
@@ -366,28 +358,46 @@ body {
           font-size: 0.65em;
           margin-left: 0.5em;
         }
-        button {
+        a {
+          position: absolute;
+          bottom: 0;
+          right: 1em;
           // width: 10em;
           height: 2em;
           margin-left: auto;
           background: none;
-          color: lawngreen;
+          color: $brightGreen;
           font-size: 0.65em;
           border: none;
+          cursor: pointer;
+          text-decoration: none;
         }
         span {
           color: $gold;
           margin-left: -0.5em;
         }
       }
+      .we-print,
+      .box {
+        @include breakpoint(m) {
+          width: 35%;
+        }
+        @include breakpoint(xxs, xs, s) {
+          width: 80%;
+        }
+      }
     }
   }
 
   .carousel {
-    height: 50em;
-    background: green;
-    img {
-      height: 20em;
+    height: 30em;
+    background: $red;
+    h2 {
+      text-align: center;
+      color: white;
+      padding-top: 1em;
+      text-shadow: 2px 2px black;
+      // padding-bottom: 0.5em;
     }
     * {
       box-sizing: border-box;
@@ -402,7 +412,21 @@ body {
 
     /* Hide the images by default */
     .mySlides {
-      display: none;
+      // display: none;
+      // width: 100%;
+      .img-background {
+        background-color: $beige;
+        width: 22em;
+        margin: auto;
+        border-radius: 2em;
+        border: 3px solid black;
+
+        img {
+          height: 22em;
+          width: 18em;
+          margin-left: 10%;
+        }
+      }
     }
 
     /* Next & previous buttons */
@@ -544,33 +568,62 @@ body {
         background-color: white;
         width: 30%;
         max-width: 20em;
+        padding-bottom: 4em;
+        position: relative;
+
+        &:hover {
+          // border: 2px solid $gold;
+          // stroke: $gold;
+          outline: 4px solid $gold;
+          outline-offset: 3px;
+        }
         @include breakpoint(xxs, xs, s) {
           width: 80%;
           margin-bottom: 3em;
         }
 
         img {
-          width: 95%;
+          width: 90%;
+          height: 40%;
           border: 3px solid black;
-          margin-left: 1.5%;
+          margin-left: 3.75%;
           margin-top: 2%;
         }
         h4 {
           text-align: center;
+          color: $red;
+          font-size: 1.35em;
         }
         p {
           width: 90%;
           margin: auto;
+          text-align: justify;
+          color: $darkBlue;
+          font-weight: 700;
         }
-        button {
+
+        a {
           margin-top: 0.5em;
           margin-left: 65%;
           border: none;
           background: none;
-          color: lawngreen;
-          font-size: 1em;
+          color: $brightGreen;
+          font-size: 1.15em;
+          text-shadow: 1px 1px $darkBlue;
+          position: absolute;
+          bottom: 0.35em;
+          right: 0.5em;
+          text-decoration: none;
+          // ::hover {
+          //   cursor: pointer;
+          // }
         }
       }
     }
+  }
+  .footer-gradient {
+    height: 1em;
+    // background: rgb(34, 6, 173);
+    background: linear-gradient(0deg, $gold 0%, $darkBlue 100%);
   }
 }

@@ -25,6 +25,8 @@ footer .footer-top {
 }
 footer .footer-top h4 {
   margin-bottom: 1em;
+  font-size: 1.25em;
+  text-shadow: 1px 1px black;
 }
 footer .footer-top p,
 footer .footer-top a {
@@ -33,16 +35,22 @@ footer .footer-top a {
 footer .policies {
   display: flex;
   flex-direction: column;
-  margin-bottom: 0;
   margin: 0.5em;
 }
+footer .policies h4 {
+  margin-bottom: 0.5em;
+}
+footer .policies a {
+  text-decoration: none;
+  color: black;
+}
 footer .border {
-  border: 2px solid black;
+  border: 3px solid black;
   width: 90%;
   margin: 2em auto;
 }
 footer img {
   display: block;
   width: 15em;
-  margin-left: auto;
+  margin: auto;
 }/*# sourceMappingURL=footer.css.map */

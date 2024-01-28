@@ -65,7 +65,7 @@ body {
   z-index: 1;
   margin-top: 0;
   background: #121fcf;
-  background: linear-gradient(to bottom right, #121fcf 0%, #cf1512 76%);
+  background: linear-gradient(to bottom right, #eaa102 0%, #2206ad 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -74,7 +74,7 @@ body {
   width: 25%;
   align-self: center;
   margin: 1em auto;
-  padding: 1em 0.25em;
+  padding: 0.5em 0.2em;
   background-color: #2206ad;
   font-weight: 600;
   font-size: 1.5em;
@@ -365,13 +365,58 @@ body {
 }
 .home-page .services div.boxes .we-print {
   font-size: 1.85em;
-  line-height: 1em;
+  line-height: 1.05em;
   font-weight: 800;
-  width: 40%;
-}
-.home-page .services div.boxes .we-print,
-.home-page .services div.boxes .box {
   width: 25%;
+  margin-top: 0;
+  text-transform: capitalize;
+}
+.home-page .services div.boxes p {
+  font-size: 2em;
+  color: white;
+}
+.home-page .services div.boxes .box {
+  position: relative;
+  background-color: #001588;
+  margin-bottom: 2em;
+  padding-bottom: 1em;
+  margin-right: 0.125em;
+  width: 25%;
+}
+.home-page .services div.boxes .box:hover {
+  background-color: #ac2700;
+  color: #001588;
+}
+.home-page .services div.boxes .box h5 {
+  color: #eaa102;
+  font-size: 0.85em;
+}
+.home-page .services div.boxes .box p {
+  font-size: 0.65em;
+  margin-left: 0.5em;
+}
+.home-page .services div.boxes .box a {
+  position: absolute;
+  bottom: 0;
+  right: 1em;
+  height: 2em;
+  margin-left: auto;
+  background: none;
+  color: lawngreen;
+  font-size: 0.65em;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+.home-page .services div.boxes .box span {
+  color: #eaa102;
+  margin-left: -0.5em;
+}
+@media (min-width: 737px) and (max-width: 980px) {
+  .home-page .services div.boxes .we-print,
+  .home-page .services div.boxes .box {
+    width: 35%;
+  }
 }
 @media (max-width: 360px) {
   .home-page .services div.boxes .we-print,
@@ -391,45 +436,9 @@ body {
     width: 80%;
   }
 }
-.home-page .services div.boxes p {
-  font-size: 2em;
-  color: white;
-}
-.home-page .services div.boxes .box {
-  background-color: #001588;
-  height: -moz-min-content;
-  height: min-content;
-  margin-bottom: 2em;
-  padding-bottom: 1em;
-  margin-right: 0.125em;
-}
-.home-page .services div.boxes .box:hover {
-  background-color: #ac2700;
-  color: #001588;
-}
-.home-page .services div.boxes .box h5 {
-  color: #eaa102;
-  font-size: 0.85em;
-}
-.home-page .services div.boxes .box p {
-  font-size: 0.65em;
-  margin-left: 0.5em;
-}
-.home-page .services div.boxes .box button {
-  height: 2em;
-  margin-left: auto;
-  background: none;
-  color: lawngreen;
-  font-size: 0.65em;
-  border: none;
-}
-.home-page .services div.boxes .box span {
-  color: #eaa102;
-  margin-left: -0.5em;
-}
 .home-page .carousel {
-  height: 50em;
-  background: green;
+  height: 30em;
+  background: #ac2700;
   /* Slideshow container */
   /* Hide the images by default */
   /* Next & previous buttons */
@@ -440,8 +449,11 @@ body {
   /* The dots/bullets/indicators */
   /* Fading animation */
 }
-.home-page .carousel img {
-  height: 20em;
+.home-page .carousel h2 {
+  text-align: center;
+  color: white;
+  padding-top: 1em;
+  text-shadow: 2px 2px black;
 }
 .home-page .carousel * {
   box-sizing: border-box;
@@ -451,8 +463,17 @@ body {
   position: relative;
   margin: auto;
 }
-.home-page .carousel .mySlides {
-  display: none;
+.home-page .carousel .mySlides .img-background {
+  background-color: #906348;
+  width: 22em;
+  margin: auto;
+  border-radius: 2em;
+  border: 3px solid black;
+}
+.home-page .carousel .mySlides .img-background img {
+  height: 22em;
+  width: 18em;
+  margin-left: 10%;
 }
 .home-page .carousel .prev,
 .home-page .carousel .next {
@@ -556,6 +577,12 @@ body {
   background-color: white;
   width: 30%;
   max-width: 20em;
+  padding-bottom: 4em;
+  position: relative;
+}
+.home-page .blog-articles .articles .card:hover {
+  outline: 4px solid #eaa102;
+  outline-offset: 3px;
 }
 @media (max-width: 360px) {
   .home-page .blog-articles .articles .card {
@@ -576,23 +603,38 @@ body {
   }
 }
 .home-page .blog-articles .articles .card img {
-  width: 95%;
+  width: 90%;
+  height: 40%;
   border: 3px solid black;
-  margin-left: 1.5%;
+  margin-left: 3.75%;
   margin-top: 2%;
 }
 .home-page .blog-articles .articles .card h4 {
   text-align: center;
+  color: #ac2700;
+  font-size: 1.35em;
 }
 .home-page .blog-articles .articles .card p {
   width: 90%;
   margin: auto;
+  text-align: justify;
+  color: #2206ad;
+  font-weight: 700;
 }
-.home-page .blog-articles .articles .card button {
+.home-page .blog-articles .articles .card a {
   margin-top: 0.5em;
   margin-left: 65%;
   border: none;
   background: none;
   color: lawngreen;
-  font-size: 1em;
+  font-size: 1.15em;
+  text-shadow: 1px 1px #2206ad;
+  position: absolute;
+  bottom: 0.35em;
+  right: 0.5em;
+  text-decoration: none;
+}
+.home-page .footer-gradient {
+  height: 1em;
+  background: linear-gradient(0deg, #eaa102 0%, #2206ad 100%);
 }/*# sourceMappingURL=style.css.map */
