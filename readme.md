@@ -19,4 +19,8 @@ fix footer polices
 
 footer polices links...
 
-article 4 imgs
+article 4 - imgs
+
+footer mobile design
+
+footer address

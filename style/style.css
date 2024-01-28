@@ -58,18 +58,6 @@ body {
   z-index: 1;
   line-height: 1em;
 }
-.home-page .frame1 p.gradient {
-  align-self: flex-end;
-  width: 45%;
-  margin-right: 1em;
-  z-index: 1;
-  margin-top: 0;
-  background: #121fcf;
-  background: linear-gradient(to bottom right, #febc2b 0%, #2206ad 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
 .home-page .frame1 button {
   width: 25%;
   align-self: center;
@@ -82,6 +70,7 @@ body {
   color: #febc2b;
   text-decoration: none;
   border: 0;
+  cursor: pointer;
 }
 .home-page .frame1::after {
   content: "";

@@ -2,7 +2,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #eaa102;
+  background: #febc2b;
 }
 nav .logo {
   height: 3em;
@@ -19,8 +19,7 @@ nav div.right a {
   text-decoration: none;
   color: black;
 }
-nav div.right .order {
-  background-color: #ac2700;
+nav div.right .cta {
   color: white;
   padding: 0.25em 1em;
   font-weight: 800;
@@ -29,17 +28,24 @@ nav div.right .order {
   text-align: center;
 }
 @media (max-width: 360px) {
-  nav div.right .order {
+  nav div.right .cta {
     padding: 0.25em 0.25em;
   }
 }
 @media (min-width: 361px) and (max-width: 480px) {
-  nav div.right .order {
+  nav div.right .cta {
     padding: 0.25em 0.25em;
   }
 }
 @media (min-width: 481px) and (max-width: 736px) {
-  nav div.right .order {
+  nav div.right .cta {
     padding: 0.25em 0.25em;
   }
+}
+nav div.right .order {
+  background-color: #861e00;
+}
+nav div.right .quote {
+  background-color: #03167f;
+  margin-right: 0.5em;
 }/*# sourceMappingURL=navigation.css.map */
