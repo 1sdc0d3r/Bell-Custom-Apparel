@@ -31,7 +31,8 @@ body {
       // z-index: -1;
       @include breakpoint(xxs, xs, s) {
         // display: none;
-        margin-top: 20em;
+        // margin-top: 20em;
+        left: 0%;
       }
     }
 
@@ -55,22 +56,25 @@ body {
       z-index: 1;
       line-height: 1em;
     }
-    // p.gradient {
-    //   align-self: flex-end;
-    //   width: 45%;
-    //   margin-right: 1em;
-    //   z-index: 1;
-    //   margin-top: 0;
-    //   // text-shadow: 1px 1px black;
-    //   // stroke: black;
+    p.gradient {
+      align-self: flex-end;
+      width: 35%;
+      margin-right: 1em;
+      z-index: 1;
+      margin-top: 0;
+      // text-shadow: 1px 1px black;
+      // stroke: black;
 
-    //   // Get Gradient from css portal
-    //   background: #121fcf;
-    //   background: linear-gradient(to bottom right, $gold 0%, $darkBlue 100%);
-    //   -webkit-background-clip: text;
-    //   background-clip: text;
-    //   -webkit-text-fill-color: transparent;
-    // }
+      // Get Gradient from css portal
+      background: #121fcf;
+      background: linear-gradient(to bottom right, $gold 0%, $darkBlue 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      @include breakpoint(xxs, xs, s, m) {
+        display: none;
+      }
+    }
 
     button {
       width: 25%;

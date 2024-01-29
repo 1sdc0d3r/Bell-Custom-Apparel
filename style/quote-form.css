@@ -37,7 +37,7 @@
   margin-top: 4em;
 }
 #quote-form .left h5 {
-  color: #ac2700;
+  color: #861e00;
   font-size: 2em;
 }
 #quote-form .left p {
@@ -60,10 +60,10 @@
 }
 #quote-form form h1 {
   margin: 2em auto;
-  color: #ac2700;
+  color: #861e00;
 }
 #quote-form form h4 {
-  color: #ac2700;
+  color: #861e00;
   margin: 2em 0 0;
 }
 #quote-form form .contact-info {
@@ -99,6 +99,7 @@
   font-size: 1.25em;
   font-weight: 800;
   background: #cfe6fc;
+  cursor: pointer;
 }
 #quote-form .corner {
   position: absolute;

@@ -2,12 +2,14 @@
   color: #2206ad;
   display: flex;
   flex-direction: column;
+  margin: 1em;
 }
 .order-form h1 {
   text-align: center;
   color: #2206ad;
   margin: 1em 0 1.25em;
   font-size: 3em;
+  text-shadow: 2px 2px #861e00;
 }
 .order-form label {
   font-weight: 600;
@@ -55,6 +57,9 @@
 }
 .order-form .design {
   padding-bottom: 2em;
+}
+.order-form .design .premade-design input {
+  width: auto;
 }
 .order-form .print-location {
   display: flex;
@@ -111,6 +116,7 @@
   font-weight: 500;
   border-radius: 0.5em;
   box-shadow: 3px 3px #2206ad;
+  cursor: pointer;
 }
 
 foot {

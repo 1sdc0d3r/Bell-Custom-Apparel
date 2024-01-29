@@ -4,6 +4,7 @@
 body {
   // color: $darkBlue;
   margin: 0;
+  font-size: 1.5em;
 }
 .float-r {
   float: right;
@@ -12,7 +13,6 @@ body {
   float: left;
 }
 h3 {
-  clear: both;
 }
 img {
   // display: block;
@@ -26,11 +26,16 @@ h2 {
   text-align: center;
 }
 h3 {
-  margin: 1em;
+  clear: both;
+  margin: 3em 1em 0.5em;
 }
 .author,
 .date {
-  text-align: right;
+  text-align: center;
+  // margin-left: 50%;
+}
+.date {
+  margin-bottom: 1em;
 }
 
 .hero-img {
@@ -50,7 +55,8 @@ p {
 .local-tip {
   clear: both;
   text-align: center;
-  margin: auto 5em;
+  margin: 3em 5em;
+  // color: pink;
 }
 
 .article-1 {
@@ -62,4 +68,17 @@ p {
 .shadow {
   border: 2px solid black;
   box-shadow: 0px 0px 5px black;
+}
+
+.hashtags {
+  text-align: center;
+  margin: 3em 5em 2em;
+}
+
+.wrapper {
+  // height: 20em;
+  p {
+    // vertical-align: center;
+    // margin-top: 5%;
+  }
 }

@@ -5,6 +5,8 @@ nav {
   justify-content: space-between;
   align-items: center;
   background: $gold;
+  padding: 0.45em 0;
+
   .logo {
     height: 3em;
     width: 10em;
@@ -26,6 +28,8 @@ nav {
       font-size: 1.3em;
       text-shadow: 1px 1px 0px black;
       text-align: center;
+      margin-top: 0.25em;
+      margin-bottom: 0.25em;
       @include breakpoint(xxs, xs, s) {
         padding: 0.25em 0.25em;
       }

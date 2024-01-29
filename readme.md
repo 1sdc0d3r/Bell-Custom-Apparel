@@ -1,20 +1,13 @@
-- on hover of 'better pricing' cards swap red and yellow corners
-- change font
-- nav needs more height
-- carousel needs new imgs
-- about page
+- change fonts
+
 - php sending forms
 
 forms make button tab-able
 
-order now page needs a little margin around all edges of page
-
-change colors in pallet
-
-replace first frame man img w/ fixed img
-
-services - creative design card info
+index services - creative design card info and imgs
 
 article 4 - imgs
 
-footer mobile design
+links for bottom 3 cards
+
+services cards darker blue

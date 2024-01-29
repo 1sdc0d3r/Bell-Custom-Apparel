@@ -3,6 +3,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   background: #febc2b;
+  padding: 0.45em 0;
 }
 nav .logo {
   height: 3em;
@@ -26,6 +27,8 @@ nav div.right .cta {
   font-size: 1.3em;
   text-shadow: 1px 1px 0px black;
   text-align: center;
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
 }
 @media (max-width: 360px) {
   nav div.right .cta {

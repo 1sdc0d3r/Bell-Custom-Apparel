@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  font-size: 1.5em;
 }
 
 .float-r {
@@ -8,10 +9,6 @@ body {
 
 .float-l {
   float: left;
-}
-
-h3 {
-  clear: both;
 }
 
 img {
@@ -26,12 +23,17 @@ h2 {
 }
 
 h3 {
-  margin: 1em;
+  clear: both;
+  margin: 3em 1em 0.5em;
 }
 
 .author,
 .date {
-  text-align: right;
+  text-align: center;
+}
+
+.date {
+  margin-bottom: 1em;
 }
 
 .hero-img {
@@ -48,7 +50,7 @@ p {
 .local-tip {
   clear: both;
   text-align: center;
-  margin: auto 5em;
+  margin: 3em 5em;
 }
 
 .article-1 .fashion-img {
@@ -59,4 +61,9 @@ p {
 .shadow {
   border: 2px solid black;
   box-shadow: 0px 0px 5px black;
+}
+
+.hashtags {
+  text-align: center;
+  margin: 3em 5em 2em;
 }/*# sourceMappingURL=articles.css.map */
