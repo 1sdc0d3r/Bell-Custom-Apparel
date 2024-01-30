@@ -11,3 +11,6 @@ article 4 - imgs
 links for bottom 3 cards
 
 services cards darker blue
+
+google analytics
+gtags

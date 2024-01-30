@@ -1,6 +1,9 @@
 @import "./mixins.scss";
 @import "./breakpoints.scss";
 
+body {
+  margin: 0;
+}
 h1,
 h2 {
   text-align: center;
@@ -12,9 +15,15 @@ h1 {
 .about {
   display: flex;
   // align-items: center;
-  font-size: 1.1em;
+  font-size: 1.25em;
+  margin: 0 3%;
+  @include breakpoint(xxs, xs, s, m) {
+    flex-direction: column-reverse;
+  }
+
   img {
     margin: 0;
+    width: 5em;
   }
   .border {
     border: 2px solid black;

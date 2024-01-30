@@ -1,22 +1,40 @@
 @import "./mixins.scss";
 @import "./breakpoints.scss";
+@font-face {
+  font-family: "Acumin-RPro";
+  src: url("/fonts/Acumin-RPro.woff") format("woff");
+}
 
 body {
   // color: $darkBlue;
   margin: 0;
-  font-size: 1.5em;
 }
-.float-r {
-  float: right;
+.article {
+  margin: 0 5%;
+  font-size: 1.5em;
+  font-family: "Acumin-RPro";
 }
 .float-l {
   float: left;
+  // margin-bottom: 3em;
 }
-h3 {
+.float-r {
+  float: right;
+  margin-left: 5em;
 }
+.float-l,
+.float-r {
+  margin-bottom: 3em;
+  @include breakpoint(xxs, xs, s) {
+    float: none;
+    display: block;
+    margin: auto;
+  }
+}
+
 img {
   // display: block;
-  width: 40%;
+  width: 35%;
   vertical-align: middle;
   margin: auto 1em;
 }
@@ -28,6 +46,9 @@ h2 {
 h3 {
   clear: both;
   margin: 3em 1em 0.5em;
+  @include breakpoint(xxs, xs, s) {
+    text-align: center;
+  }
 }
 .author,
 .date {
@@ -45,26 +66,26 @@ h3 {
   width: 30em;
   //   text-align: center;
 }
+
 p {
   // vertical-align: center;
   // display: inline;
   text-align: justify;
   margin: auto 1em;
+  @include breakpoint(xxs, xs, s) {
+    margin-top: 1.5em;
+  }
 }
 
 .local-tip {
   clear: both;
   text-align: center;
   margin: 3em 5em;
-  // color: pink;
-}
-
-.article-1 {
-  .fashion-img {
-    border: 2px solid black;
-    box-shadow: 0px 0px 5px black;
+  @include breakpoint(xxs, xs, s) {
+    margin: 3em 1em;
   }
 }
+
 .shadow {
   border: 2px solid black;
   box-shadow: 0px 0px 5px black;
@@ -73,12 +94,14 @@ p {
 .hashtags {
   text-align: center;
   margin: 3em 5em 2em;
+  @include breakpoint(xxs, xs, s) {
+    margin: 3em 1em 2em;
+  }
 }
 
-.wrapper {
-  // height: 20em;
-  p {
-    // vertical-align: center;
-    // margin-top: 5%;
+.article-1 {
+  .fashion-img {
+    border: 2px solid black;
+    box-shadow: 0px 0px 5px black;
   }
 }
