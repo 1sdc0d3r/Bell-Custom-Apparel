@@ -355,6 +355,14 @@ body {
           background-color: $red;
           color: $navy;
         }
+        img {
+          width: 2em;
+          height: 2em;
+          margin-bottom: 0.5em;
+        }
+        .cheese-grater {
+          transform: rotate(90deg);
+        }
         h5 {
           color: $gold;
           font-size: 0.85em;

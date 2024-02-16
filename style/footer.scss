@@ -3,6 +3,7 @@
 
 footer {
   background: $gold;
+
   .footer-top {
     display: flex;
     justify-content: space-around;
@@ -19,6 +20,9 @@ footer {
     p,
     a {
       margin-top: 0em;
+      @include breakpoint(xxs, xs, s) {
+        text-align: center;
+      }
     }
   }
   .address {

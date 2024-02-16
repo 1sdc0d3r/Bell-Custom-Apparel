@@ -408,6 +408,14 @@ body {
   background-color: #861e00;
   color: #001588;
 }
+.home-page .services div.boxes .box img {
+  width: 2em;
+  height: 2em;
+  margin-bottom: 0.5em;
+}
+.home-page .services div.boxes .box .cheese-grater {
+  transform: rotate(90deg);
+}
 .home-page .services div.boxes .box h5 {
   color: #febc2b;
   font-size: 0.85em;

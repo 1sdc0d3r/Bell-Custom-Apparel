@@ -32,6 +32,24 @@ footer .footer-top p,
 footer .footer-top a {
   margin-top: 0em;
 }
+@media (max-width: 360px) {
+  footer .footer-top p,
+  footer .footer-top a {
+    text-align: center;
+  }
+}
+@media (min-width: 361px) and (max-width: 480px) {
+  footer .footer-top p,
+  footer .footer-top a {
+    text-align: center;
+  }
+}
+@media (min-width: 481px) and (max-width: 736px) {
+  footer .footer-top p,
+  footer .footer-top a {
+    text-align: center;
+  }
+}
 footer .policies {
   display: flex;
   flex-direction: column;
