@@ -125,3 +125,17 @@ p {
     margin-bottom: 2em;
   }
 }
+
+.blog {
+  font-size: 1.1em;
+  margin-top: 2em;
+  .author {
+    margin-bottom: 0;
+  }
+  p {
+    margin-bottom: 2em;
+  }
+  span {
+    color: red;
+  }
+}

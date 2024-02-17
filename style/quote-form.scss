@@ -7,7 +7,8 @@
   justify-content: space-around;
   position: relative;
   font-size: 1.2em;
-  height: 100vh;
+  // height: 100vh;
+  padding-bottom: 3em;
   overflow: hidden;
   // flex-direction: column;
 
@@ -71,6 +72,7 @@
       border-radius: 1em;
       box-shadow: 3px 2px darkblue;
       height: 1.75em;
+      margin-bottom: 3em;
     }
     label {
       display: flex;
@@ -78,6 +80,9 @@
       color: $darkBlue;
       font-weight: 600;
       // width: 20%;
+      @include breakpoint(xxs, xs, s) {
+        flex-direction: column;
+      }
       input {
         width: 80%;
         margin: auto 0;

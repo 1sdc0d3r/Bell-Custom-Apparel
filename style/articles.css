@@ -190,4 +190,18 @@ p {
 
 .article-3 .hero-img {
   margin-bottom: 2em;
+}
+
+.blog {
+  font-size: 1.1em;
+  margin-top: 2em;
+}
+.blog .author {
+  margin-bottom: 0;
+}
+.blog p {
+  margin-bottom: 2em;
+}
+.blog span {
+  color: red;
 }/*# sourceMappingURL=articles.css.map */

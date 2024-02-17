@@ -56,9 +56,20 @@ if(isset($_POST['submit'])) {
 
 // $headers = 'From: '.$reply_to."\n".
 // 'Reply-To: '.$reply_to;
+  // $headers = "From: admin@bluesmokemedia.net" . "\r\n" . "Content-Type: text/plain; charset=utf-8",
+  //       "-fadmin@bluesmokemedia.net";
+
+
+  // Define SMTP authentication parameters:
+$smtp_params['host'] = 'ssl://mi3-ss112.a2hosting.com';
+$smtp_params['port'] = '465';
+$smtp_params['auth'] = true;
+$smtp_params['username'] = 'admin@bluesmokemedia.net';
+$smtp_params['password'] = '2tpuZb~g6Xvd';
 
 //! @mail() suppresses all warnings/errors vs mail()
-mail($email_to, $subject, $message, $headers);
+mail($email_to, $subject, $message, "From: admin@bluesmokemedia.net" . "\r\n" . "Content-Type: text/plain; charset=utf-8",
+        "-fadmin@bluesmokemedia.net");
 // echo mail
 ?>
 
@@ -70,7 +81,7 @@ mail($email_to, $subject, $message, $headers);
 <script type="text/javascript">alert("We have received your request, we will get back to you shortly. Thank You.");
 // todo redirect anywhere?
 // window.location.href='../html/Contact.html';
-    </script>
+</script>
     <h1>audit sent</h1>
 </body>
 </html>

@@ -3,7 +3,7 @@
   justify-content: space-around;
   position: relative;
   font-size: 1.2em;
-  height: 100vh;
+  padding-bottom: 3em;
   overflow: hidden;
 }
 #quote-form img {
@@ -77,12 +77,28 @@
   border-radius: 1em;
   box-shadow: 3px 2px darkblue;
   height: 1.75em;
+  margin-bottom: 3em;
 }
 #quote-form form label {
   display: flex;
   justify-content: space-between;
   color: #2206ad;
   font-weight: 600;
+}
+@media (max-width: 360px) {
+  #quote-form form label {
+    flex-direction: column;
+  }
+}
+@media (min-width: 361px) and (max-width: 480px) {
+  #quote-form form label {
+    flex-direction: column;
+  }
+}
+@media (min-width: 481px) and (max-width: 736px) {
+  #quote-form form label {
+    flex-direction: column;
+  }
 }
 #quote-form form label input {
   width: 80%;
