@@ -60,16 +60,17 @@ if(isset($_POST['submit'])) {
   //       "-fadmin@bluesmokemedia.net";
 
 
-  // Define SMTP authentication parameters:
-$smtp_params['host'] = 'ssl://mi3-ss112.a2hosting.com';
-$smtp_params['port'] = '465';
-$smtp_params['auth'] = true;
-$smtp_params['username'] = 'admin@bluesmokemedia.net';
-$smtp_params['password'] = '2tpuZb~g6Xvd';
+  // Define SMTP authentication parameters: 
+// $smtp_params['host'] = 'ssl://mi3-ss112.a2hosting.com';
+// $smtp_params['port'] = '465';
+// $smtp_params['auth'] = true;
+// $smtp_params['username'] = 'admin@bluesmokemedia.net';
+// $smtp_params['password'] = '2tpuZb~g6Xvd';
 
 //! @mail() suppresses all warnings/errors vs mail()
-mail($email_to, $subject, $message, "From: admin@bluesmokemedia.net" . "\r\n" . "Content-Type: text/plain; charset=utf-8",
-        "-fadmin@bluesmokemedia.net");
+ mail($email_to, $subject, $message, $params);
+// mail($email_to, $subject, $message, "From: admin@bluesmokemedia.net" . "\r\n" . "Content-Type: text/plain; charset=utf-8",
+//         "-fadmin@bluesmokemedia.net");
 // echo mail
 ?>
 

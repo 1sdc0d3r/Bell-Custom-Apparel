@@ -8,6 +8,4 @@ links for bottom 3 cards (blog...)
 google analytics
 gtags
 
-nav mobile
-
 colten review policies

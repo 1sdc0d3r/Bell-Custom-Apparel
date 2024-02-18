@@ -1,4 +1,6 @@
 @import "./mixins.scss";
+@import "./breakpoints.scss";
+
 // https://stackoverflow.com/questions/37465458/input-text-field-with-only-bottom-border
 
 .order-form {
@@ -37,11 +39,19 @@
 
     label {
       margin-right: 0.5em;
+      @include breakpoint(xxs, xs, s) {
+        display: flex;
+        justify-content: center;
+      }
+
       input {
         width: 35%;
         margin: auto 0;
         margin-bottom: 1em;
         max-width: 80em;
+        @include breakpoint(xxs, xs, s) {
+          margin-left: 1em;
+        }
       }
     }
     .line-4 {
@@ -69,6 +79,7 @@
   }
   .design {
     padding-bottom: 2em;
+
     .premade-design {
       input[type="radio"] {
         // margin: 0;
@@ -88,8 +99,17 @@
     display: flex;
     justify-content: space-around;
     margin: 1em 0 2em;
+
+    @include breakpoint(xxs, xs, s) {
+      flex-direction: column;
+      align-items: center;
+    }
+
     img {
       width: 10em;
+      @include breakpoint(xxs, xs, s) {
+        margin-bottom: 2em;
+      }
     }
     .front div,
     .back div,
@@ -102,11 +122,17 @@
   .shirt-material,
   .brand {
     width: 50%;
+    @include breakpoint(xxs, xs, s) {
+      width: 80%;
+      margin: auto;
+    }
+
     input {
       width: 100%;
     }
   }
   .quantity {
+    // margin: auto;
     table {
       border-collapse: collapse;
       td {
@@ -163,7 +189,8 @@ foot {
     font-weight: 800;
   }
   .email {
-    color: $darkRed;
+    // color: $darkRed;
+    color: $darkBlue;
   }
 }
 

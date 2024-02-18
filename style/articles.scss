@@ -35,6 +35,8 @@ body {
     float: none;
     display: block;
     margin: auto;
+    width: 80%;
+    margin-bottom: 1.8em;
   }
 }
 
@@ -43,6 +45,9 @@ img {
   width: 35%;
   vertical-align: middle;
   margin: auto 1em;
+  @include breakpoint(xxs, xs, s) {
+    // width: 80%;
+  }
 }
 
 h1,
@@ -54,6 +59,8 @@ h3 {
   margin: 3em 1em 0.5em;
   @include breakpoint(xxs, xs, s) {
     text-align: center;
+    font-size: 1.8em;
+    // margin-bottom: 2em;
   }
 }
 .author,
@@ -72,7 +79,8 @@ h3 {
   width: 30em;
   //   text-align: center;
   @include breakpoint(xxs, xs, s) {
-    width: 15em;
+    // width: 15em;
+    width: 90%;
   }
 }
 
@@ -136,6 +144,12 @@ p {
     margin-bottom: 2em;
   }
   span {
-    color: red;
+    font-weight: 800; // not working with current font
+  }
+  .indent {
+    margin: auto 3em;
+    @include breakpoint(xxs, xs, s) {
+      margin: auto 2em;
+    }
   }
 }

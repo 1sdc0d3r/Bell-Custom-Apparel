@@ -22,6 +22,7 @@ footer {
       margin-top: 0em;
       @include breakpoint(xxs, xs, s) {
         text-align: center;
+        font-size: 1.5em;
       }
     }
   }
@@ -30,6 +31,10 @@ footer {
   .email {
   }
   .phone {
+    a {
+      color: green;
+      text-decoration: none;
+    }
   }
   .policies {
     display: flex;

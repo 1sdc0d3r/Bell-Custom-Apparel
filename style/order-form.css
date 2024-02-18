@@ -29,11 +29,44 @@
 .order-form .contact label {
   margin-right: 0.5em;
 }
+@media (max-width: 360px) {
+  .order-form .contact label {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (min-width: 361px) and (max-width: 480px) {
+  .order-form .contact label {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (min-width: 481px) and (max-width: 736px) {
+  .order-form .contact label {
+    display: flex;
+    justify-content: center;
+  }
+}
 .order-form .contact label input {
   width: 35%;
   margin: auto 0;
   margin-bottom: 1em;
   max-width: 80em;
+}
+@media (max-width: 360px) {
+  .order-form .contact label input {
+    margin-left: 1em;
+  }
+}
+@media (min-width: 361px) and (max-width: 480px) {
+  .order-form .contact label input {
+    margin-left: 1em;
+  }
+}
+@media (min-width: 481px) and (max-width: 736px) {
+  .order-form .contact label input {
+    margin-left: 1em;
+  }
 }
 .order-form .contact .line-4 input {
   width: 17%;
@@ -66,8 +99,41 @@
   justify-content: space-around;
   margin: 1em 0 2em;
 }
+@media (max-width: 360px) {
+  .order-form .print-location {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (min-width: 361px) and (max-width: 480px) {
+  .order-form .print-location {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (min-width: 481px) and (max-width: 736px) {
+  .order-form .print-location {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .order-form .print-location img {
   width: 10em;
+}
+@media (max-width: 360px) {
+  .order-form .print-location img {
+    margin-bottom: 2em;
+  }
+}
+@media (min-width: 361px) and (max-width: 480px) {
+  .order-form .print-location img {
+    margin-bottom: 2em;
+  }
+}
+@media (min-width: 481px) and (max-width: 736px) {
+  .order-form .print-location img {
+    margin-bottom: 2em;
+  }
 }
 .order-form .print-location .front div,
 .order-form .print-location .back div,
@@ -79,6 +145,30 @@
 .order-form .shirt-material,
 .order-form .brand {
   width: 50%;
+}
+@media (max-width: 360px) {
+  .order-form .apparel-options,
+  .order-form .shirt-material,
+  .order-form .brand {
+    width: 80%;
+    margin: auto;
+  }
+}
+@media (min-width: 361px) and (max-width: 480px) {
+  .order-form .apparel-options,
+  .order-form .shirt-material,
+  .order-form .brand {
+    width: 80%;
+    margin: auto;
+  }
+}
+@media (min-width: 481px) and (max-width: 736px) {
+  .order-form .apparel-options,
+  .order-form .shirt-material,
+  .order-form .brand {
+    width: 80%;
+    margin: auto;
+  }
 }
 .order-form .apparel-options input,
 .order-form .shirt-material input,
@@ -140,7 +230,7 @@ foot .email {
   font-weight: 800;
 }
 foot .email {
-  color: #ac2700;
+  color: #2206ad;
 }
 
 .corner {

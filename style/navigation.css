@@ -5,6 +5,21 @@ nav {
   background: #febc2b;
   padding: 0.45em 0;
 }
+@media (max-width: 360px) {
+  nav {
+    flex-direction: column;
+  }
+}
+@media (min-width: 361px) and (max-width: 480px) {
+  nav {
+    flex-direction: column;
+  }
+}
+@media (min-width: 481px) and (max-width: 736px) {
+  nav {
+    flex-direction: column;
+  }
+}
 nav .logo {
   height: 3em;
   width: 10em;
@@ -14,11 +29,44 @@ nav div.right {
   display: flex;
   align-items: center;
 }
+@media (max-width: 360px) {
+  nav div.right {
+    flex-direction: column;
+  }
+}
+@media (min-width: 361px) and (max-width: 480px) {
+  nav div.right {
+    flex-direction: column;
+  }
+}
+@media (min-width: 481px) and (max-width: 736px) {
+  nav div.right {
+    flex-direction: column;
+  }
+}
 nav div.right a {
   margin-right: 2em;
   font-size: 1.1em;
   text-decoration: none;
   color: black;
+}
+@media (max-width: 360px) {
+  nav div.right a {
+    margin-right: 0;
+    font-size: 1.2em;
+  }
+}
+@media (min-width: 361px) and (max-width: 480px) {
+  nav div.right a {
+    margin-right: 0;
+    font-size: 1.2em;
+  }
+}
+@media (min-width: 481px) and (max-width: 736px) {
+  nav div.right a {
+    margin-right: 0;
+    font-size: 1.2em;
+  }
 }
 nav div.right .cta {
   color: white;
@@ -32,16 +80,19 @@ nav div.right .cta {
 }
 @media (max-width: 360px) {
   nav div.right .cta {
+    font-size: 1.15em;
     padding: 0.25em 0.25em;
   }
 }
 @media (min-width: 361px) and (max-width: 480px) {
   nav div.right .cta {
+    font-size: 1.15em;
     padding: 0.25em 0.25em;
   }
 }
 @media (min-width: 481px) and (max-width: 736px) {
   nav div.right .cta {
+    font-size: 1.15em;
     padding: 0.25em 0.25em;
   }
 }
@@ -51,4 +102,19 @@ nav div.right .order {
 nav div.right .quote {
   background-color: #03167f;
   margin-right: 0.5em;
+}
+@media (max-width: 360px) {
+  nav div.right .quote {
+    margin-right: 0em;
+  }
+}
+@media (min-width: 361px) and (max-width: 480px) {
+  nav div.right .quote {
+    margin-right: 0em;
+  }
+}
+@media (min-width: 481px) and (max-width: 736px) {
+  nav div.right .quote {
+    margin-right: 0em;
+  }
 }/*# sourceMappingURL=navigation.css.map */
