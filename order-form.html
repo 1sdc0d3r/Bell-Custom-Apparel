@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Order Form</title>
-    <link rel="stylesheet" href="./style/order-form.css" />
     <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/order-form.css" />
     <script src="/js/jquery-1.11.3.min.js" type="text/javascript"></script>
   </head>
   <body>
     <nav></nav>
-    <div class="order-form">
+    <form action="/php/order-form.php" method="post" class="order-form">
       <h1>Order Form</h1>
       <div class="contact">
         <div class="line-1">
@@ -181,8 +181,9 @@
         <p>Available options depend on what item is ordered.</p>
         <input type="text" name="colors" />
       </div>
-      <button type="submit">Submit</button>
-    </div>
+      <!-- <button type="submit">Submit</button> -->
+      <input type="submit" name="submit" value="Submit" />
+    </form>
     <foot>
       <img src="/images/Bell Custom Apparel Logo.svg" alt="" />
       <p class="address">2409 Bell Ln UT, 84405</p>

@@ -195,7 +195,7 @@
 .order-form .quantity .larger-brands {
   margin-top: 0;
 }
-.order-form button {
+.order-form input[type=submit] {
   align-self: center;
   width: 8em;
   margin-top: 3em;
