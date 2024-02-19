@@ -1,21 +1,46 @@
-<!-- redirect back to contact page or successful message (inject success or error message on contact page)
--->
+<!--// todo handle success and errors -->
 
-<!--//! check local server xampp /Applications/XAMPP/xamppfiles/htdocs for testing-->
 <?php
-
 if(isset($_POST['submit'])) {
-  $email_to = "solutions@BlueSmokeMedia.net"; //email address for receiving email
-  $business = $_POST['business'];
+  $email_to = "fish0859@gmail.com"; //email address for receiving email
+  $subject = "Order Form";
 
   //! Required Vars
-  $name = $_POST['name'];
-  $reply_to = $_POST['email'];
-  $subject = $_POST['subject'];
-  $message = $_POST['message'];
-  $anti_spam = $_POST['antiSpam'] == "";
-  //! Required Vars
+  $client = $_POST['client'];
+  $Telephone = $_POST['Telephone'];
+  $Contact = $_POST['Contact'];
+  $EMail = $_POST['E-Mail'];
+  $Address1 = $_POST['Address1'];
+  $Address2 = $_POST['Address2'];
+  $City = $_POST['City'];
+  $State = $_POST['State'];
+  $Zipcode = $_POST['Zipcode'];
+  $Other = $_POST['Other'];
 
+  $premadedesign = $_POST['premade-design'];
+  $desc = $_POST['desc'];
+  $locations = $_POST['locations'];
+  $numColors = $_POST['num-colors']; //! here
+  $front = $_POST['front'];
+  $back = $_POST['back'];
+  $Sleeve = $_POST['Sleeve'];
+  $sleeveRadio = $_POST['sleeve-radio'];
+  $apparelOptions = $_POST['apparel-options'];
+  $shirtMaterial = $_POST['shirt-material'];
+  $brand = $_POST['brand'];
+
+  $quantityXS = $_POST['quantity-xs'];
+  $quantityS = $_POST['quantity-S'];
+  $quantityM = $_POST['quantity-M'];
+  $quantityL = $_POST['quantity-L'];
+  $quantityXL = $_POST['quantity-XL'];
+  $quantity2XL = $_POST['quantity-2XL'];
+  $quantity3XL = $_POST['quantity-3XL'];
+  $quantity4XL = $_POST['quantity-4XL'];
+  $colors = $_POST['colors'];
+
+
+  //! Required Vars
 
   function died($error) {
     // your error code can go here
@@ -26,11 +51,11 @@ if(isset($_POST['submit'])) {
   }
 
   // validation expected data exists
-  if(!isset($name) ||
-    !isset($reply_to) ||
-    !isset($subject) ||
-    !isset($message) ||
-    !isset($anti_spam) || !$anti_spam
+  if(!isset($client) ||
+  // !isset($reply_to) ||
+     !isset($Telephone)
+  // !isset($companyName)
+  // !isset($anti_spam) || !$anti_spam
     )  {
     died('We are sorry, but there appears to be a problem with the form you submitted. Please check all required fields.');
   }
@@ -42,23 +67,76 @@ if(isset($_POST['submit'])) {
     return str_replace($bad,"",$string);
   }
 
-  $business = "Business: ".clean_string($business)."\n";
 
-  $reply_to = clean_string($reply_to);
-  $name = clean_string($name);
-  $subject = "Contact - ".clean_string($subject);
-  $message = $business."\n".clean_string($message)."\n\n";
-  $message .= clean_string($name);
-  // $message .= "Contact No.: ".clean_string($phone)."\n";
+  $message .= "client: ";
+  $message .= clean_string($client)."\n";
+  $message .= "Telephone: ";
+  $message .= clean_string($Telephone)."\n";
+  $message .= "Contact: ";
+  $message .= clean_string($Contact)."\n";
+  $message .= "E-Mail: ";
+  $message .= clean_string($EMail)."\n";
+  $message .= "Address1: ";
+  $message .= clean_string($Address1)."\n";
+  $message .= "Address2: ";
+  $message .= clean_string($Address2)."\n";
+  $message .= "City: ";
+  $message .= clean_string($City)."\n";
+  $message .= "State: ";
+  $message .= clean_string($State)."\n";
+  $message .= "Zipcode: ";
+  $message .= clean_string($Zipcode)."\n";
+  $message .= "Other: ";
+  $message .= clean_string($Other)."\n\n";
+
+  $message .= "premade-design: ";
+  $message .= clean_string($premadedesign)."\n";
+  $message .= "desc: ";
+  $message .= clean_string($desc)."\n";
+  $message .= "locations: ";
+  $message .= clean_string($locations)."\n";
+  $message .= "Number of Colors: ";
+  $message .= clean_string($numColors)."\n";
+  $message .= "front: ";
+  $message .= clean_string($front)."\n";
+  $message .= "back: ";
+  $message .= clean_string($back)."\n";
+  $message .= "Sleeve: ";
+  $message .= clean_string($Sleeve)."\n";
+  $message .= "sleeve-side: ";
+  $message .= clean_string($sleeveRadio)."\n";
+  $message .= "apparel-options: ";
+  $message .= clean_string($apparelOptions)."\n";
+  $message .= "shirt-material: ";
+  $message .= clean_string($shirtMaterial)."\n";
+  $message .= "brand: ";
+  $message .= clean_string($brand)."\n\n";
+
+  $message .= "quantity-xs: ";
+  $message .= clean_string($quantityXS)."\n";
+  $message .= "quantity-S: ";
+  $message .= clean_string($quantityS)."\n";
+  $message .= "quantity-M: ";
+  $message .= clean_string($quantityM)."\n";
+  $message .= "quantity-L: ";
+  $message .= clean_string($quantityL)."\n";
+  $message .= "quantity-XL: ";
+  $message .= clean_string($quantityXL)."\n";
+  $message .= "quantity-2XL: ";
+  $message .= clean_string($quantity2XL)."\n";
+  $message .= "quantity-3XL: ";
+  $message .= clean_string($quantity3XL)."\n";
+  $message .= "quantity-4XL: ";
+  $message .= clean_string($quantity4XL)."\n";
+  $message .= "colors: ";
+  $message .= clean_string($colors)."\n";
+  // todo format phone number - also turn into link for iphone
 
 
-// create email headers
-$headers = 'From: '.$reply_to."\n".
-'Reply-To: '.$reply_to;
-// "\n".'X-Mailer: PHP/' . phpversion(); //? I don't think this is necessary...
 //! @mail() suppresses all warnings/errors vs mail()
-mail($email_to, $subject, $message, $headers);
-// echo mail
+  mail($email_to, $subject, $message, "From: no-reply@bluesmokemedia.net" . "\r\n" . "Content-Type: text/plain; charset=utf-8",
+        "-fno-reply@bluesmokemedia.net");
+        // echo mail
 ?>
 
 
@@ -69,7 +147,8 @@ mail($email_to, $subject, $message, $headers);
 <script type="text/javascript">alert("We have received your request, we will get back to you shortly. Thank You.");
 // todo redirect anywhere?
 // window.location.href='../html/Contact.html';
-    </script>
+</script>
+    <h1>audit sent</h1>
 </body>
 </html>
 

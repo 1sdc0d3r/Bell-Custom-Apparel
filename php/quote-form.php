@@ -43,25 +43,25 @@ if(isset($_POST['submit'])) {
     return str_replace($bad,"",$string);
   }
 
-  $message ="companyName: ";
+  $message ="Company Name: ";
   $message .= clean_string($companyName)."\n";
-  $message .="address: ";
+  $message .="Address: ";
   $message .= clean_string($address)."\n";
-  $message .="contactName: ";
+  $message .="Contact Name: ";
   $message .= clean_string($contactName)."\n";
-  $message .="phone: ";
+  $message .="Phone: ";
   $message .= clean_string($phone)."\n";
-  $message .="apparelOptions: ";
+  $message .="Apparel Options: ";
   $message .= clean_string($apparelOptions)."\n";
-  $message .="shirtMaterial: ";
+  $message .="Shirt Material: ";
   $message .= clean_string($shirtMaterial)."\n";
-  $message .="quantity: ";
+  $message .="Quantity: ";
   $message .= clean_string($quantity)."\n";
-  $message .="preMadeDesign: ";
+  $message .="PreMade Design: ";
   $message .= clean_string($preMadeDesign)."\n";
-  $message .="numLocations: ";
+  $message .="Num Locations: ";
   $message .= clean_string($numLocations)."\n";
-  $message .="numColors: ";
+  $message .="Num Colors: ";
   $message .= clean_string($numColors)."\n";
   // todo format phone number - also turn into link for iphone
 
