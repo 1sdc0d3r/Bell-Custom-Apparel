@@ -144,11 +144,11 @@ if(isset($_POST['submit'])) {
 <html>
 <head></head>
 <body>
-<script type="text/javascript">alert("We have received your request, we will get back to you shortly. Thank You.");
+<script type="text/javascript">alert("We have received your order form, we will get back to you shortly. Thank You.");
 // todo redirect anywhere?
-// window.location.href='../html/Contact.html';
+window.location.href='/';
 </script>
-    <h1>audit sent</h1>
+    <h1>Order Form Sent</h1>
 </body>
 </html>
 
