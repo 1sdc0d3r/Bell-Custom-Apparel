@@ -6,11 +6,16 @@ if(isset($_POST['submit'])) {
   $subject = "Quote Form";
 
   //! Required Vars
-  $contactName = $_POST['contactName'];
-  // $reply_to = $_POST['email'];
-  $phone = $_POST['phone'];
   $companyName = $_POST['companyName'];
-  // $anti_spam = $_POST['antiSpam'] == "";
+  $address = $_POST['address'];
+  $contactName = $_POST['contactName'];
+  $phone = $_POST['phone'];
+  $apparelOptions = $_POST['apparel-options'];
+  $shirtMaterial = $_POST['shirt-material'];
+  $quantity = $_POST['quantity'];
+  $preMadeDesign = $_POST['pre-made-design'];
+  $numLocations = $_POST['numLocations'];
+  $numColors = $_POST['numColors'];
   //! Required Vars
 
   function died($error) {
@@ -38,29 +43,31 @@ if(isset($_POST['submit'])) {
     return str_replace($bad,"",$string);
   }
 
-  // $reply_to = clean_string($reply_to);
-
-  $contactName = clean_string($contactName);
-
-  $message = "Website: ";
+  $message ="companyName: ";
   $message .= clean_string($companyName)."\n";
-  $message .= "contactName: ";
+  $message .="address: ";
+  $message .= clean_string($address)."\n";
+  $message .="contactName: ";
   $message .= clean_string($contactName)."\n";
-  $message .= "Phone: ";
+  $message .="phone: ";
   $message .= clean_string($phone)."\n";
+  $message .="apparelOptions: ";
+  $message .= clean_string($apparelOptions)."\n";
+  $message .="shirtMaterial: ";
+  $message .= clean_string($shirtMaterial)."\n";
+  $message .="quantity: ";
+  $message .= clean_string($quantity)."\n";
+  $message .="preMadeDesign: ";
+  $message .= clean_string($preMadeDesign)."\n";
+  $message .="numLocations: ";
+  $message .= clean_string($numLocations)."\n";
+  $message .="numColors: ";
+  $message .= clean_string($numColors)."\n";
   // todo format phone number - also turn into link for iphone
 
 
-// create email headers
-
-// $headers = 'From: '.$reply_to."\n".
-// 'Reply-To: '.$reply_to;
-  // $headers = "From: admin@bluesmokemedia.net" . "\r\n" . "Content-Type: text/plain; charset=utf-8",
-  //       "-fadmin@bluesmokemedia.net";
-
-
 //! @mail() suppresses all warnings/errors vs mail()
- mail($email_to, $subject, $message, "From: no-reply@bluesmokemedia.net" . "\r\n" . "Content-Type: text/plain; charset=utf-8",
+  mail($email_to, $subject, $message, "From: no-reply@bluesmokemedia.net" . "\r\n" . "Content-Type: text/plain; charset=utf-8",
         "-fno-reply@bluesmokemedia.net");
         // echo mail
 ?>
