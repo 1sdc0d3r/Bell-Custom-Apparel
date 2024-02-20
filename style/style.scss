@@ -19,6 +19,10 @@ body {
     flex-direction: column;
     position: relative;
     overflow: hidden;
+    @include breakpoint(xxs, xs, s) {
+      // height: 40em;
+    }
+
     img {
       // height: 40em;
       height: 100%;
@@ -32,7 +36,10 @@ body {
       @include breakpoint(xxs, xs, s) {
         // display: none;
         // margin-top: 20em;
-        left: 0%;
+        left: 5%;
+        // width: 10%;
+        // display: none;
+        opacity: 25%;
       }
     }
 
@@ -55,6 +62,13 @@ body {
       text-shadow: -2px -2px $grey;
       z-index: 1;
       line-height: 1em;
+      @include breakpoint(xxs, xs, s) {
+        // display: none;
+        // margin-left: 0;
+        font-size: 3em;
+        width: 50%;
+        margin-right: 2em;
+      }
     }
     p.gradient {
       align-self: flex-end;
@@ -89,6 +103,9 @@ body {
       text-decoration: none;
       border: 0;
       cursor: pointer;
+      @include breakpoint(xxs, xs, s) {
+        // margin-top: 15em;
+      }
     }
     // .corner {
     //   position: absolute;
