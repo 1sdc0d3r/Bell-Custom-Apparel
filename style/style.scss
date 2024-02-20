@@ -32,6 +32,7 @@ body {
       position: absolute;
       left: 10%;
       top: 10%;
+      max-width: 40em;
       // z-index: -1;
       @include breakpoint(xxs, xs, s) {
         // display: none;
@@ -299,8 +300,10 @@ body {
             right: 0em;
             z-index: -1;
           }
+
           &:hover {
             background-color: $gold;
+
             h5 {
               color: $darkBlue;
             }
@@ -310,6 +313,18 @@ body {
             &::before {
               background-color: $red;
             }
+          }
+        }
+        .hover {
+          display: none;
+        }
+        &:hover {
+          background-color: $gold;
+          .non-hover {
+            display: none;
+          }
+          .hover {
+            display: inline;
           }
         }
       }

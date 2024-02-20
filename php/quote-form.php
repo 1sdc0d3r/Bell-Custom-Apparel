@@ -2,7 +2,7 @@
 
 <?php
 if(isset($_POST['submit'])) {
-  $email_to = "fish0859@gmail.com"; //email address for receiving email
+  $email_to = "Colten@BellPhoto.com"; //email address for receiving email
   $subject = "Quote Form";
 
   //! Required Vars
@@ -67,8 +67,8 @@ if(isset($_POST['submit'])) {
 
 
 //! @mail() suppresses all warnings/errors vs mail()
-  mail($email_to, $subject, $message, "From: no-reply@bluesmokemedia.net" . "\r\n" . "Content-Type: text/plain; charset=utf-8",
-        "-fno-reply@bluesmokemedia.net");
+  mail($email_to, $subject, $message, "From: no-reply@BellCustomApparel.com" . "\r\n" . "Content-Type: text/plain; charset=utf-8",
+        "-fno-reply@BellCustomApparel.com");
         // echo mail
 ?>
 

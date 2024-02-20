@@ -23,6 +23,7 @@ body {
   position: absolute;
   left: 10%;
   top: 10%;
+  max-width: 40em;
 }
 @media (max-width: 360px) {
   .home-page .frame1 img {
@@ -395,6 +396,18 @@ body {
 }
 .home-page section.choose-us .choose-boxes .box:nth-child(2):hover::before {
   background-color: #861e00;
+}
+.home-page section.choose-us .choose-boxes .box .hover {
+  display: none;
+}
+.home-page section.choose-us .choose-boxes .box:hover {
+  background-color: #febc2b;
+}
+.home-page section.choose-us .choose-boxes .box:hover .non-hover {
+  display: none;
+}
+.home-page section.choose-us .choose-boxes .box:hover .hover {
+  display: inline;
 }
 .home-page .box {
   display: flex;
