@@ -128,6 +128,21 @@ body {
   border: 0;
   cursor: pointer;
 }
+@media (max-width: 360px) {
+  .home-page .frame1 button {
+    width: 40%;
+  }
+}
+@media (min-width: 361px) and (max-width: 480px) {
+  .home-page .frame1 button {
+    width: 40%;
+  }
+}
+@media (min-width: 481px) and (max-width: 736px) {
+  .home-page .frame1 button {
+    width: 40%;
+  }
+}
 .home-page .frame1::after {
   content: "";
   position: absolute;

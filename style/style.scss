@@ -105,6 +105,7 @@ body {
       cursor: pointer;
       @include breakpoint(xxs, xs, s) {
         // margin-top: 15em;
+        width: 40%;
       }
     }
     // .corner {
