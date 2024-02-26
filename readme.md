@@ -9,3 +9,10 @@ google analytics
 gtags
 
 colten review policies
+
+analytics
+spacing on shipping policy page
+
+cards broken on index
+
+policy pages broken
