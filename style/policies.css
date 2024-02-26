@@ -1,0 +1,11 @@
+body {
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.policy {
+  margin: 3em 2em;
+}/*# sourceMappingURL=policies.css.map */
