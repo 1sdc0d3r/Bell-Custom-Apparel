@@ -16,6 +16,7 @@ if(isset($_POST['submit'])) {
   $preMadeDesign = $_POST['pre-made-design'];
   $numLocations = $_POST['numLocations'];
   $numColors = $_POST['numColors'];
+  $email = $_POST['email'];
   //! Required Vars
 
   function died($error) {
@@ -51,6 +52,8 @@ if(isset($_POST['submit'])) {
   $message .= clean_string($contactName)."\n";
   $message .="Phone: ";
   $message .= clean_string($phone)."\n";
+  $message .="Email: ";
+  $message .= clean_string($email)."\n";
   $message .="Apparel Options: ";
   $message .= clean_string($apparelOptions)."\n";
   $message .="Shirt Material: ";
