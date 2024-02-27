@@ -1,7 +1,7 @@
 // const articleList = await import("./articles.js").then(res => res.default);
 
-// const URL = 'http://heroku...';
-const URL = 'http://localhost';
+const URL = 'https://git.heroku.com/bell-custom-apparel.git';
+// const URL = 'http://localhost';
 
 const PORT = 8080;
 const articleList = await fetch(`${URL}:${PORT}/`).then(resp => resp.json()).catch(err => console.log(err));

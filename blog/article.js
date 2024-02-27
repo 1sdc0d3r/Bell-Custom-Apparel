@@ -2,8 +2,8 @@
 // const article = articleList.find(e => e.id == id);
 const id = new URLSearchParams(window.location.search).get("id");
 
-// const URL = 'http://heroku...';
-const URL = 'http://localhost';
+const URL = 'https://git.heroku.com/bell-custom-apparel.git';
+// const URL = 'http://localhost';
 const PORT = 8080;
 const article = await fetch(`${URL}:${PORT}/${id}`).then(resp => resp.json()).catch(err => console.log(err));
 
