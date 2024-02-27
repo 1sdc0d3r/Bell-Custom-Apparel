@@ -1,3 +1,4 @@
+@import "./mixins.scss";
 body {
   height: 100vh;
   margin: 0;
@@ -6,28 +7,73 @@ body {
   justify-content: space-between;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .blog {
   height: 100%;
   .card {
-    border: 2px solid red;
+    border: 3px solid black;
     display: flex;
     width: 70%;
-    margin: auto;
     padding: 0.5em;
     margin: 1em auto;
+
+    @include breakpoint(xxs, xs, s, m, l) {
+      width: 90%;
+    }
 
     img {
       width: 40%;
       height: 15em;
+      margin: auto;
     }
     .right {
       margin: 1em 1em 0.5em;
       h1 {
-        // text-align: ;
+        margin: 0 auto;
       }
       .author {
         margin-right: 1em;
       }
+    }
+  }
+}
+
+.blog-post {
+  height: 100%;
+  padding: 3em 15%;
+  @include breakpoint(xxs, xs, s, m, l) {
+    padding: 2.5em 5%;
+  }
+
+  article {
+    border: 2px solid lightgrey;
+    margin: 1em;
+    h1 {
+      text-align: center;
+      font-size: 2.25em;
+      @include breakpoint(xxs, xs, s, m) {
+        font-size: 1.95em;
+      }
+    }
+    p {
+      text-align: justify;
+      margin-bottom: 2em;
+    }
+    .tags {
+      width: 95%;
+      margin: auto;
+      a {
+        margin-right: 1em;
+        word-break: keep-all;
+        // text-decoration: underline;
+      }
+    }
+    .author {
+      padding-top: 1em;
     }
   }
 }

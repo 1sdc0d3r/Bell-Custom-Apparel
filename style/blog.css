@@ -6,24 +6,130 @@ body {
   justify-content: space-between;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .blog {
   height: 100%;
 }
 .blog .card {
-  border: 2px solid red;
+  border: 3px solid black;
   display: flex;
   width: 70%;
-  margin: auto;
   padding: 0.5em;
   margin: 1em auto;
+}
+@media (max-width: 360px) {
+  .blog .card {
+    width: 90%;
+  }
+}
+@media (min-width: 361px) and (max-width: 480px) {
+  .blog .card {
+    width: 90%;
+  }
+}
+@media (min-width: 481px) and (max-width: 736px) {
+  .blog .card {
+    width: 90%;
+  }
+}
+@media (min-width: 737px) and (max-width: 980px) {
+  .blog .card {
+    width: 90%;
+  }
+}
+@media (min-width: 981px) and (max-width: 1280px) {
+  .blog .card {
+    width: 90%;
+  }
 }
 .blog .card img {
   width: 40%;
   height: 15em;
+  margin: auto;
 }
 .blog .card .right {
   margin: 1em 1em 0.5em;
 }
+.blog .card .right h1 {
+  margin: 0 auto;
+}
 .blog .card .right .author {
   margin-right: 1em;
+}
+
+.blog-post {
+  height: 100%;
+  padding: 3em 15%;
+}
+@media (max-width: 360px) {
+  .blog-post {
+    padding: 2.5em 5%;
+  }
+}
+@media (min-width: 361px) and (max-width: 480px) {
+  .blog-post {
+    padding: 2.5em 5%;
+  }
+}
+@media (min-width: 481px) and (max-width: 736px) {
+  .blog-post {
+    padding: 2.5em 5%;
+  }
+}
+@media (min-width: 737px) and (max-width: 980px) {
+  .blog-post {
+    padding: 2.5em 5%;
+  }
+}
+@media (min-width: 981px) and (max-width: 1280px) {
+  .blog-post {
+    padding: 2.5em 5%;
+  }
+}
+.blog-post article {
+  border: 2px solid lightgrey;
+  margin: 1em;
+}
+.blog-post article h1 {
+  text-align: center;
+  font-size: 2.25em;
+}
+@media (max-width: 360px) {
+  .blog-post article h1 {
+    font-size: 1.95em;
+  }
+}
+@media (min-width: 361px) and (max-width: 480px) {
+  .blog-post article h1 {
+    font-size: 1.95em;
+  }
+}
+@media (min-width: 481px) and (max-width: 736px) {
+  .blog-post article h1 {
+    font-size: 1.95em;
+  }
+}
+@media (min-width: 737px) and (max-width: 980px) {
+  .blog-post article h1 {
+    font-size: 1.95em;
+  }
+}
+.blog-post article p {
+  text-align: justify;
+  margin-bottom: 2em;
+}
+.blog-post article .tags {
+  width: 95%;
+  margin: auto;
+}
+.blog-post article .tags a {
+  margin-right: 1em;
+  word-break: keep-all;
+}
+.blog-post article .author {
+  padding-top: 1em;
 }/*# sourceMappingURL=blog.css.map */

@@ -6,16 +6,16 @@ const articleList = await import("./articles.js").then(res => res.default);
 
 // if (!article) window.location = "404.html";
 
-// document.title = article.title + "| Bell Custom Apparel"
+// document.title = article.title + " | Bell Custom Apparel"
 const entryPoint = document.querySelector(".blog");
 
 
 for (let i = 0; i < articleList.length; i++) {
     const e = articleList[i];
     // console.log(e);
-    const card = document.createElement("div");
+    const card = document.createElement("a");
     card.className = 'card';
-    // card.href = ; //! link to article
+    card.href = `/blog/blog-post.html?id=${e.id}`; //! link to article
     const right = document.createElement("div");
     right.className = 'right';
 
