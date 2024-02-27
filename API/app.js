@@ -3,6 +3,8 @@ require('dotenv').config();
 var express = require('express');
 var app = express();
 var mysql = require('mysql2');
+const cors = require("cors")
+app.use(cors())
 
 app.listen(process.env.PORT, () => console.log(`App is listening on port ${process.env.PORT}!`))
 
@@ -24,8 +26,9 @@ app.get('/', (req, res) => {
 
     connection.query(sql, (err, result) => {
         if (err) throw err;
-        console.log(result);
-        res.send('Articles received');
+        // console.log(result);
+        console.log('get /')
+        res.send(result);
     });
 });
 

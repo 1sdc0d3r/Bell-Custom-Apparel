@@ -1,18 +1,10 @@
-// id, title, author, date, imageUrl, imageAlt, category, tags, snippet, content
-
-const articleList = await import("./articles.js").then(res => res.default);
-// const id = new URLSearchParams(window.location.search).get("id");
-// const article = articleList.find(e => e.id == id);
-
-// if (!article) window.location = "404.html";
-
-// document.title = article.title + " | Bell Custom Apparel"
+// const articleList = await import("./articles.js").then(res => res.default);
 const entryPoint = document.querySelector(".blog");
 
+const articleList = await fetch('http://localhost:8080/').then(resp => resp.json());
 
 for (let i = 0; i < articleList.length; i++) {
     const e = articleList[i];
-    // console.log(e);
     const card = document.createElement("a");
     card.className = 'card';
     card.href = `/blog/blog-post.html?id=${e.id}`; //! link to article
@@ -25,13 +17,13 @@ for (let i = 0; i < articleList.length; i++) {
     author.classList.add("author");
     const snippet = document.createElement("p");
     const img = document.createElement("img");
-    img.src = `/images/blog/${e.imageUrl}`;
-    img.alt = e.imageAlt;
+    img.src = `/images/blog/${e.Img_Url}`;
+    img.alt = e.Img_Alt;
 
-    title.textContent = e.title;
-    date.textContent = e.date;
-    author.textContent = e.author;
-    snippet.textContent = e.snippet;
+    title.textContent = e.Title;
+    date.textContent = e.Date;
+    author.textContent = e.Author;
+    snippet.textContent = e.Snippet;
 
     right.append(title, author, date, snippet);
     card.append(img, right);
