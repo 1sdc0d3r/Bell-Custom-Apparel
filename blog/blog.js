@@ -1,7 +1,11 @@
 // const articleList = await import("./articles.js").then(res => res.default);
 const entryPoint = document.querySelector(".blog");
 
-const articleList = await fetch('http://localhost:8080/').then(resp => resp.json());
+// const URL = 'http://heroku...';
+const URL = 'http://localhost';
+
+const PORT = 8080;
+const articleList = await fetch(`${URL}:${PORT}/`).then(resp => resp.json()).catch(err => console.log(err));
 
 for (let i = 0; i < articleList.length; i++) {
     const e = articleList[i];
