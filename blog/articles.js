@@ -10,7 +10,19 @@ export default [{
     snippet: "Nowadays, sites are getting better. With minimal design and highly maintained archives they continue to offer comprehensive services. However, prominent mistakes on several websites are still apparent. Here is a list of the website mistakes that scares visitors away and ruins the business reputation.",
     //for content use a array of paragraphs for spacing
     content: ["Nowadays, website designs are getting better and more user-friendly. With minimal design and highly maintained archives, they continue to offer comprehensive services. However, prominent mistakes on several websites are still apparent. Here is a list of the website mistakes that scares visitors away and ruins the business's reputation.", " < span > 1. The under - construction sign. < /span> Putting an 'under construction' sign on your website marks you as a struggling beginner. Websites are supposed to grow in time. If your site is not yet ready to be shown in public, then don't publish it."]
-}];
+}, {
+    id: 2,
+    title: "11 Prominent Website Design Mistakes",
+    author: "Constance Beebe",
+    date: "05/2020",
+    imageUrl: "ID_1_10_Prominent_Website_Design_Mistakes.jpg",
+    imageAlt: "10 Prominent Website Design Mistakes Commonly Made.",
+    category: "Custom Website Design",
+    tags: "Affordable Custom Website Design, Search Engine Optimization (SEO), Organic SEO, E-Commerce Website Development, Website Usability",
+    snippet: "Nowadays, sites are getting better. With minimal design and highly maintained archives they continue to offer comprehensive services. However, prominent mistakes on several websites are still apparent. Here is a list of the website mistakes that scares visitors away and ruins the business reputation.",
+    //for content use a array of paragraphs for spacing
+    content: ["Nowadays, website designs are getting better and more user-friendly. With minimal design and highly maintained archives, they continue to offer comprehensive services. However, prominent mistakes on several websites are still apparent. Here is a list of the website mistakes that scares visitors away and ruins the business's reputation.", " < span > 1. The under - construction sign. < /span> Putting an 'under construction' sign on your website marks you as a struggling beginner. Websites are supposed to grow in time. If your site is not yet ready to be shown in public, then don't publish it."]
+}, ];
 
 
 // <span>2. Visitor counters.</span> Visitors generally are not bothered by the fact that many other people have visited your site. However, if the visitor counter shows a low number, that can be a psychological turn-off to people, if it's too high, people might think that it's fictitious. The best way to do this is not to include it on your website. If you really want to know how many visitors you have had, check your analytics.
