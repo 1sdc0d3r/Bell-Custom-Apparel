@@ -5,6 +5,9 @@ const id = new URLSearchParams(window.location.search).get("id");
 const article = articleList.find(e => e.id == id);
 
 // if (!article) window.location = "404.html";
+// fetch('https://jsonplaceholder.typicode.com/todos/1')
+//     .then(response => response.json())
+//     .then(json => console.log(json));
 
 document.title = article.title + " | Bell Custom Apparel"
 const entryPoint = document.querySelector(".blog-post");
@@ -26,7 +29,7 @@ for (let i = 0; i < contentArr.length; i++) {
     content.appendChild(e);
 }
 
-const tagsArr = article.tags.split(', ');
+const tagsArr = article.tags.split(',');
 for (let i = 0; i < tagsArr.length; i++) {
     const e = document.createElement("a");
     const tag = tagsArr[i];
