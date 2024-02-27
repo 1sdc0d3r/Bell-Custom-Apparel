@@ -37,6 +37,4 @@ for (let i = 0; i < articleList.length; i++) {
     card.append(img, right);
 
     entryPoint.appendChild(card);
-    console.log(e.title)
-    console.log(document.querySelector("h1"));
 }

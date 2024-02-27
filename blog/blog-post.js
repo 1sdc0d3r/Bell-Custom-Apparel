@@ -18,19 +18,21 @@ const content = document.createElement("div");
 const tags = document.createElement("div");
 tags.className = "tags";
 
-for (let i = 0; i < article.content.length; i++) {
+
+const contentArr = article.content.split('/n')
+for (let i = 0; i < contentArr.length; i++) {
     const e = document.createElement("p");
-    e.textContent = article.content[i];
+    e.textContent = contentArr[i];
     content.appendChild(e);
 }
 
-for (let i = 0; i < article.tags.length; i++) {
+const tagsArr = article.tags.split(', ');
+for (let i = 0; i < tagsArr.length; i++) {
     const e = document.createElement("a");
-    const tag = article.tags[i];
+    const tag = tagsArr[i];
     e.textContent = `#${tag}`;
     e.href = `/blog/blog.html?tags='${tag}`;
     tags.appendChild(e);
-    console.log(e);
 }
 
 
