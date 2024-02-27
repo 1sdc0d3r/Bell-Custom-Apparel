@@ -1,8 +1,11 @@
-// id, title, author, date, imageUrl, imageAlt, category, tags, snippet, content
-
-const articleList = await import("./articles.js").then(res => res.default);
+// const articleList = await import("./articles.js").then(res => res.default);
+// const article = articleList.find(e => e.id == id);
 const id = new URLSearchParams(window.location.search).get("id");
-const article = articleList.find(e => e.id == id);
+
+// const URL = 'http://heroku...';
+const URL = 'http://localhost';
+const PORT = 8080;
+const article = await fetch(`${URL}:${PORT}/${id}`).then(resp => resp.json()).catch(err => console.log(err));
 
 // if (!article) window.location = "404.html";
 // fetch('https://jsonplaceholder.typicode.com/todos/1')
@@ -21,15 +24,15 @@ const content = document.createElement("div");
 const tags = document.createElement("div");
 tags.className = "tags";
 
-
-const contentArr = article.content.split('/n')
+const contentArr = article.Content.split('/n')
 for (let i = 0; i < contentArr.length; i++) {
     const e = document.createElement("p");
     e.textContent = contentArr[i];
     content.appendChild(e);
 }
+// console.log(contentArr)
 
-const tagsArr = article.tags.split(',');
+const tagsArr = article.Tags.split(',');
 for (let i = 0; i < tagsArr.length; i++) {
     const e = document.createElement("a");
     const tag = tagsArr[i];
@@ -39,9 +42,9 @@ for (let i = 0; i < tagsArr.length; i++) {
 }
 
 
-title.textContent = article.title;
-date.textContent = article.date;
-author.textContent = article.author;
+title.textContent = article.Title;
+date.textContent = article.Date;
+author.textContent = article.Author;
 
 articleDiv.append(author, date, title, content, tags);
 entryPoint.appendChild(articleDiv);

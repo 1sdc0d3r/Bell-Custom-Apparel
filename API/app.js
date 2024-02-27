@@ -31,5 +31,14 @@ app.get('/', (req, res) => {
         res.send(result);
     });
 });
+app.get('/:id', (req, res) => {
+    let sql = `SELECT * FROM Article WHERE id=${req.params.id}`;
 
-module.exports = app;
+    connection.query(sql, (err, result) => {
+        if (err) throw err;
+        // console.log(result);
+        res.send(result[0]);
+    });
+});
+
+// module.exports = app;

@@ -1,5 +1,4 @@
 // const articleList = await import("./articles.js").then(res => res.default);
-const entryPoint = document.querySelector(".blog");
 
 // const URL = 'http://heroku...';
 const URL = 'http://localhost';
@@ -7,11 +6,15 @@ const URL = 'http://localhost';
 const PORT = 8080;
 const articleList = await fetch(`${URL}:${PORT}/`).then(resp => resp.json()).catch(err => console.log(err));
 
+// const art = await fetch(`${URL}:${PORT}/2`).then(resp => resp.json()).catch(err => console.log(err));
+// console.log(art);
+
+const entryPoint = document.querySelector(".blog");
 for (let i = 0; i < articleList.length; i++) {
     const e = articleList[i];
     const card = document.createElement("a");
     card.className = 'card';
-    card.href = `/blog/blog-post.html?id=${e.id}`; //! link to article
+    card.href = `/blog/article.html?id=${e.id}`; //! link to article
     const right = document.createElement("div");
     right.className = 'right';
 
