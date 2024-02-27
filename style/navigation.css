@@ -96,6 +96,11 @@ nav div.right .cta {
     padding: 0.25em 0.25em;
   }
 }
+@media (min-width: 737px) and (max-width: 980px) {
+  nav div.right .cta {
+    font-size: 1.2em;
+  }
+}
 nav div.right .order {
   background-color: #861e00;
 }

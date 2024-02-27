@@ -44,6 +44,9 @@ nav {
         font-size: 1.15em;
         padding: 0.25em 0.25em;
       }
+      @include breakpoint(m) {
+        font-size: 1.2em;
+      }
     }
     .order {
       background-color: $red;
