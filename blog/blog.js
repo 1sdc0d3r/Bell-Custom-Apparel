@@ -4,7 +4,9 @@
 // const URL = 'https://bell-custom-apparel-3a2f1eb4bdea.herokuapp.com';
 const URL = 'http://localhost';
 
-const PORT = 3306;
+
+
+const PORT = 49977;
 const articleList = await fetch(`${URL}:${PORT}/`).then(resp => resp.json()).catch(err => console.log(err));
 
 // const art = await fetch(`${URL}:${PORT}/2`).then(resp => resp.json()).catch(err => console.log(err));
