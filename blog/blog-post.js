@@ -3,14 +3,12 @@
 const id = new URLSearchParams(window.location.search).get("id");
 
 // const URL = 'http://heroku...';
-const URL = 'http://localhost';
-const PORT = 8080;
-const article = await fetch(`${URL}:${PORT}/${id}`).then(resp => resp.json()).catch(err => console.log(err));
+// const URL = 'http://localhost:8080';
+const URL = 'https://bellcustomapparel.com/api';
+// const PORT = 8080;
+const article = await fetch(`${URL}?id=${id}`).then(resp => resp.json()).catch(err => console.log(err));
 
-// if (!article) window.location = "404.html";
-// fetch('https://jsonplaceholder.typicode.com/todos/1')
-//     .then(response => response.json())
-//     .then(json => console.log(json));
+if (!article) window.location = "/404.html";
 
 document.title = article.title + " | Bell Custom Apparel"
 const entryPoint = document.querySelector(".blog-post");

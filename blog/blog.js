@@ -1,13 +1,13 @@
 // const articleList = await import("./articles.js").then(res => res.default);
 
-// const URL = 'https://git.heroku.com/bell-custom-apparel.git';
+const URL = 'https://bellcustomapparel.com/api';
 // const URL = 'https://bell-custom-apparel-3a2f1eb4bdea.herokuapp.com';
-const URL = 'http://localhost';
+// const URL = 'http://localhost';
 
 
 
 const PORT = 49977;
-const articleList = await fetch(`${URL}:${PORT}/`).then(resp => resp.json()).catch(err => console.log(err));
+const articleList = await fetch(`${URL}`).then(resp => resp.json()).catch(err => console.log(err));
 
 // const art = await fetch(`${URL}:${PORT}/2`).then(resp => resp.json()).catch(err => console.log(err));
 // console.log(art);
