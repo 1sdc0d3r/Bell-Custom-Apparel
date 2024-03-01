@@ -7,13 +7,6 @@ var mysql = require('mysql2');
 const cors = require("cors")
 app.use(cors())
 
-// console.log({
-//     host: process.env.DATABASE_HOST,
-//     user: process.env.DATABASE_USER,
-//     password: process.env.DATABASE_PASSWORD,
-//     database: process.env.DATABASE_NAME
-// })
-
 // 1. Require the connection to the database.
 var connection = mysql.createConnection({
     host: process.env.DATABASE_HOST,
@@ -41,18 +34,6 @@ app.get('/api', (req, res) => {
             res.send(result);
     });
 });
-
-
-function getArticleById(req, res, id) {
-    let sql = `SELECT * FROM Article WHERE id=${id}`;
-
-    connection.query(sql, (err, result) => {
-        if (err) throw err
-        console.log(`get /${id}`);
-        res.send(result[0]);
-    });
-
-}
 
 app.listen(0, () => {
     // console.log("server data ", server)
