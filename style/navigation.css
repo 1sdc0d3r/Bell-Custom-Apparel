@@ -68,6 +68,27 @@ nav div.right a {
     font-size: 1.2em;
   }
 }
+nav div.right .promo {
+  font-weight: 800;
+  text-decoration: underline;
+  color: #2206ad;
+  text-align: center;
+}
+@media (max-width: 360px) {
+  nav div.right .promo {
+    font-size: 1.1em;
+  }
+}
+@media (min-width: 361px) and (max-width: 480px) {
+  nav div.right .promo {
+    font-size: 1.1em;
+  }
+}
+@media (min-width: 481px) and (max-width: 736px) {
+  nav div.right .promo {
+    font-size: 1.1em;
+  }
+}
 nav div.right .cta {
   color: white;
   padding: 0.25em 1em;
