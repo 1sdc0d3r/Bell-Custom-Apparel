@@ -53,8 +53,12 @@ footer .footer-top a {
     font-size: 1.5em;
   }
 }
+@media (max-width: 360px) {
+  footer .email {
+    font-size: 0.85em;
+  }
+}
 footer .phone a {
-  color: green;
   text-decoration: none;
 }
 footer .policies {

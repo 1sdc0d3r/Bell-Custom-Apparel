@@ -9,11 +9,23 @@ nav {
   @include breakpoint(xxs, xs, s) {
     flex-direction: column;
   }
+  .left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // border: 2px solid red;
 
-  .logo {
-    height: 3em;
-    width: 10em;
-    margin-left: 1em;
+    .logo {
+      height: 3em;
+      width: 10em;
+      // margin-left: 1em;
+    }
+    .tel {
+      // margin-right: auto;
+      color: black;
+      font-size: 1.5em;
+      text-decoration: none;
+    }
   }
   div.right {
     display: flex;
@@ -26,6 +38,10 @@ nav {
       font-size: 1.1em;
       text-decoration: none;
       color: black;
+      @include breakpoint(m) {
+        margin-right: 0.5em;
+      }
+
       @include breakpoint(xxs, xs, s) {
         margin-right: 0;
         font-size: 1.2em;
@@ -36,6 +52,14 @@ nav {
       text-decoration: underline;
       color: #2206ad;
       text-align: center;
+      font-size: 1.3em;
+      @include breakpoint(m, l) {
+        width: -webkit-min-content;
+        width: -moz-min-content;
+        width: min-content;
+        padding: 0 0.25em;
+      }
+
       @include breakpoint(xxs, xs, s) {
         font-size: 1.1em;
       }

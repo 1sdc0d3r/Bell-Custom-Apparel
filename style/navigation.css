@@ -20,10 +20,19 @@ nav {
     flex-direction: column;
   }
 }
-nav .logo {
+nav .left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+nav .left .logo {
   height: 3em;
   width: 10em;
-  margin-left: 1em;
+}
+nav .left .tel {
+  color: black;
+  font-size: 1.5em;
+  text-decoration: none;
 }
 nav div.right {
   display: flex;
@@ -50,6 +59,11 @@ nav div.right a {
   text-decoration: none;
   color: black;
 }
+@media (min-width: 737px) and (max-width: 980px) {
+  nav div.right a {
+    margin-right: 0.5em;
+  }
+}
 @media (max-width: 360px) {
   nav div.right a {
     margin-right: 0;
@@ -73,6 +87,21 @@ nav div.right .promo {
   text-decoration: underline;
   color: #2206ad;
   text-align: center;
+  font-size: 1.3em;
+}
+@media (min-width: 737px) and (max-width: 980px) {
+  nav div.right .promo {
+    width: -moz-min-content;
+    width: min-content;
+    padding: 0 0.25em;
+  }
+}
+@media (min-width: 981px) and (max-width: 1280px) {
+  nav div.right .promo {
+    width: -moz-min-content;
+    width: min-content;
+    padding: 0 0.25em;
+  }
 }
 @media (max-width: 360px) {
   nav div.right .promo {

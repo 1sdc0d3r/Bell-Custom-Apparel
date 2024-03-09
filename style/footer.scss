@@ -25,9 +25,13 @@ footer {
       }
     }
   }
+  .email {
+    @include breakpoint(xxs) {
+      font-size: 0.85em;
+    }
+  }
   .phone {
     a {
-      color: green;
       text-decoration: none;
     }
   }
