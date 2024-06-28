@@ -129,6 +129,7 @@
   display: flex;
   flex-direction: column;
   margin: 1em;
+  overflow: hidden;
 
   h1 {
     text-align: center;
@@ -150,6 +151,7 @@
     margin: 0 0 2em;
   }
   .contact {
+    // border: 1px solid red;
     input[type^="text"] {
       background: lightblue;
       border: 2px solid darkblue;
@@ -159,14 +161,17 @@
     }
 
     label {
-      margin-right: 0.5em;
+      margin-right: .5em;
+      margin-right: 100%;
+      width: 99%;
       @include breakpoint(xxs, xs, s) {
         display: flex;
-        justify-content: center;
+        justify-content: left;
+        white-space: nowrap;
       }
 
       input {
-        width: 35%;
+        width: 80%;
         margin: auto 0;
         margin-bottom: 1em;
         max-width: 80em;
@@ -176,8 +181,15 @@
       }
     }
     .line-4 {
+      max-width: 60em;
+      label{
+        margin-right: .1em;
+      }
       input {
         width: 17%;
+        @include breakpoint(xxs, xs, s) {
+          width: 100%;
+        }
       }
     }
   }
@@ -295,6 +307,7 @@ foot {
   flex-direction: column;
   align-items: center;
   margin-top: 5em;
+  
   img {
     width: 15em;
   }
@@ -326,5 +339,5 @@ foot {
   transform: rotate(90deg);
 }
 .br-corner {
-  right: -1em;
+  right: 0;
 }

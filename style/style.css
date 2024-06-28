@@ -7,6 +7,9 @@ body {
   margin: 0;
 }
 
+.home-page {
+  overflow: hidden;
+}
 .home-page .frame1 {
   border-top: 2px solid black;
   background-color: #dbd8d8;

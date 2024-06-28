@@ -149,6 +149,7 @@
   display: flex;
   flex-direction: column;
   margin: 1em;
+  overflow: hidden;
 }
 .order-form h1 {
   text-align: center;
@@ -174,27 +175,32 @@
 }
 .order-form .contact label {
   margin-right: 0.5em;
+  margin-right: 100%;
+  width: 99%;
 }
 @media (max-width: 360px) {
   .order-form .contact label {
     display: flex;
-    justify-content: center;
+    justify-content: left;
+    white-space: nowrap;
   }
 }
 @media (min-width: 361px) and (max-width: 480px) {
   .order-form .contact label {
     display: flex;
-    justify-content: center;
+    justify-content: left;
+    white-space: nowrap;
   }
 }
 @media (min-width: 481px) and (max-width: 736px) {
   .order-form .contact label {
     display: flex;
-    justify-content: center;
+    justify-content: left;
+    white-space: nowrap;
   }
 }
 .order-form .contact label input {
-  width: 35%;
+  width: 80%;
   margin: auto 0;
   margin-bottom: 1em;
   max-width: 80em;
@@ -214,8 +220,29 @@
     margin-left: 1em;
   }
 }
+.order-form .contact .line-4 {
+  max-width: 60em;
+}
+.order-form .contact .line-4 label {
+  margin-right: 0.1em;
+}
 .order-form .contact .line-4 input {
   width: 17%;
+}
+@media (max-width: 360px) {
+  .order-form .contact .line-4 input {
+    width: 100%;
+  }
+}
+@media (min-width: 361px) and (max-width: 480px) {
+  .order-form .contact .line-4 input {
+    width: 100%;
+  }
+}
+@media (min-width: 481px) and (max-width: 736px) {
+  .order-form .contact .line-4 input {
+    width: 100%;
+  }
 }
 .order-form .design input,
 .order-form .apparel-options input,
@@ -392,5 +419,5 @@ foot .email {
 }
 
 .br-corner {
-  right: -1em;
+  right: 0;
 }/*# sourceMappingURL=forms.css.map */
